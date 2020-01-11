@@ -50,20 +50,34 @@ import sun.misc.Unsafe;
 public class AtomicBoolean implements java.io.Serializable {
     private static final long serialVersionUID = 4654671469794556979L;
     // setup to use Unsafe.compareAndSwapInt for updates
+    /**
+     * todo @chenSy Unsafe使用 以及native源码查看
+     * Java魔法类：Unsafe应用解析 https://tech.meituan.com/2019/02/14/talk-about-java-magic-class-unsafe.html
+     * 什么是CAS? 即比较并替换，实现并发算法时常用到的一种技术。CAS操作包含三个操作数——内存位置、预期原值及新值。执行CAS操作的时候，
+     * 将内存位置的值与预期原值比较，如果相匹配，那么处理器会自动将该位置值更新为新值，否则，处理器不做任何操作。
+     * 我们都知道，CAS是一条CPU的原子指令（cmpxchg指令），不会造成所谓的数据不一致问题，Unsafe提供的CAS方法（如compareAndSwapXXX）底层实现即为CPU指令cmpxchg。
+     */
     private static final Unsafe unsafe = Unsafe.getUnsafe();
     private static final long valueOffset;
 
+    /**
+     * todo @chenSy 引入Open Jdk能查看到源码
+     */
     static {
         try {
-            valueOffset = unsafe.objectFieldOffset
+            valueOffset = unsafe.objectFieldOffset //返回对象成员属性在内存地址相对于此对象的内存地址的偏移量
                 (AtomicBoolean.class.getDeclaredField("value"));
         } catch (Exception ex) { throw new Error(ex); }
     }
 
+    /**
+     * todo @chenSy volatile原理
+     * volatile变量的修改可以立刻让所有的线程可见，保证了可见性。而不加volatile变量的字段，JMM不保证普通变量的修改立刻被所有的线程可见
+     */
     private volatile int value;
 
     /**
-     * Creates a new {@code AtomicBoolean} with the given initial value.
+     * Creates a new {@code AtomicBoolean} with the given initial（初始值） value.
      *
      * @param initialValue the initial value
      */
@@ -97,12 +111,14 @@ public class AtomicBoolean implements java.io.Serializable {
      * the actual value was not equal to the expected value.
      */
     public final boolean compareAndSet(boolean expect, boolean update) {
+        // 将boolean类型值换为数值
         int e = expect ? 1 : 0;
         int u = update ? 1 : 0;
         return unsafe.compareAndSwapInt(this, valueOffset, e, u);
     }
 
     /**
+     * todo @chenSy 与compareAndSet有啥区分？本函数的用途？
      * Atomically sets the value to the given updated value
      * if the current value {@code ==} the expected value.
      *
@@ -122,16 +138,17 @@ public class AtomicBoolean implements java.io.Serializable {
     }
 
     /**
-     * Unconditionally sets to the given value.
+     * Unconditionally(无条件地) sets to the given value.
      *
      * @param newValue the new value
      */
-    public final void set(boolean newValue) {
+    public final void set(boolean newValue) { // 值是立即可见的
         value = newValue ? 1 : 0;
     }
 
     /**
-     * Eventually sets to the given value.
+     * Eventually（延迟设置） sets to the given value.
+     * 聊聊高并发理解AtomicXXX.lazySet方法_ITer_ZC的专栏 https://blog.csdn.net/ITer_ZC/article/details/40744485
      *
      * @param newValue the new value
      * @since 1.6
@@ -143,7 +160,7 @@ public class AtomicBoolean implements java.io.Serializable {
 
     /**
      * Atomically sets to the given value and returns the previous value.
-     *
+     * 自动获取预期的值，不需要填写预期的值
      * @param newValue the new value
      * @return the previous value
      */
