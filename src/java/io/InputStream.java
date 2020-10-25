@@ -27,7 +27,7 @@ package java.io;
 
 /**
  * This abstract class is the superclass of all classes representing
- * an input stream of bytes.
+ * an input stream of bytes(这个抽象类表示所有输入字节流类的超类。).
  *
  * <p> Applications that need to define a subclass of <code>InputStream</code>
  * must always provide a method that returns the next byte of input.
@@ -49,11 +49,11 @@ public abstract class InputStream implements Closeable {
     private static final int MAX_SKIP_BUFFER_SIZE = 2048;
 
     /**
-     * Reads the next byte of data from the input stream. The value byte is
+     * Reads the next byte of data from the input stream（从输入流中读取下一个数据）. The value byte is
      * returned as an <code>int</code> in the range <code>0</code> to
-     * <code>255</code>. If no byte is available because the end of the stream
+     * <code>255</code>. If no byte is available（没有可用的字节时，会返回-1） because the end of the stream
      * has been reached, the value <code>-1</code> is returned. This method
-     * blocks until input data is available, the end of the stream is detected,
+     * blocks（方法是阻塞的） until input data is available, the end of the stream is detected,
      * or an exception is thrown.
      *
      * <p> A subclass must provide an implementation of this method.
@@ -65,6 +65,7 @@ public abstract class InputStream implements Closeable {
     public abstract int read() throws IOException;
 
     /**
+     * 从输入流中读取一些字节数存储到数组中，并返回字节数，没有读取到数据返回-1
      * Reads some number of bytes from the input stream and stores them into
      * the buffer array <code>b</code>. The number of bytes actually read is
      * returned as an integer.  This method blocks until input data is
