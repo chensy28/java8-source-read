@@ -532,10 +532,10 @@ public final class Class<T> implements java.io.Serializable,
 
     /**
      * Determines if the specified {@code Class} object represents a
-     * primitive type.
+     * primitive type（原始类型）.
      *
      * <p> There are nine predefined {@code Class} objects to represent
-     * the eight primitive types and void.  These are created by the Java
+     * the eight primitive types and void（8中基本类型和void）.  These are created by the Java
      * Virtual Machine, and have the same names as the primitive types that
      * they represent, namely {@code boolean}, {@code byte},
      * {@code char}, {@code short}, {@code int},
@@ -2293,7 +2293,7 @@ public final class Class<T> implements java.io.Serializable,
      * @see java.lang.RuntimePermission
      * @since 1.2
      */
-    public java.security.ProtectionDomain getProtectionDomain() {
+    public java.security.ProtectionDomain getProtectionDomain() { //todo @csy 待了解
         SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
             sm.checkPermission(SecurityConstants.GET_PD_PERMISSION);

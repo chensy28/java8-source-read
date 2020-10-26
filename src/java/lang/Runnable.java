@@ -27,7 +27,7 @@ package java.lang;
 
 /**
  * The <code>Runnable</code> interface should be implemented by any
- * class whose instances are intended to be executed by a thread. The
+ * class whose instances are intended to be executed by a thread(实例将由线程执行). The
  * class must define a method of no arguments called <code>run</code>.
  * <p>
  * This interface is designed to provide a common protocol for objects that
@@ -52,11 +52,11 @@ package java.lang;
  * @see     java.util.concurrent.Callable
  * @since   JDK1.0
  */
-@FunctionalInterface
+@FunctionalInterface //函数式接口 https://colobu.com/2014/10/28/secrets-of-java-8-functional-interface/
 public interface Runnable {
     /**
      * When an object implementing interface <code>Runnable</code> is used
-     * to create a thread, starting the thread causes the object's
+     * to create a thread（实现Runnable接口，用来创建一个线程）, starting the thread causes the object's
      * <code>run</code> method to be called in that separately executing
      * thread.
      * <p>

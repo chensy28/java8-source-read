@@ -1353,7 +1353,7 @@ class Thread implements Runnable {
      *          if {@link #checkAccess} determines that the current
      *          thread cannot modify this thread
      */
-    public final void setDaemon(boolean on) {
+    public final void setDaemon(boolean on) { //todo @csy 守护线程了解
         checkAccess();
         if (isAlive()) {
             throw new IllegalThreadStateException();

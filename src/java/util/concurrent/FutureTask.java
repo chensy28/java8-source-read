@@ -38,7 +38,7 @@ import java.util.concurrent.locks.LockSupport;
 
 /**
  * A cancellable asynchronous computation.  This class provides a base
- * implementation of {@link Future}, with methods to start and cancel
+ * implementation of {@link Future} 提供了Future的一组基本实现, with methods to start and cancel
  * a computation, query to see if the computation is complete, and
  * retrieve the result of the computation.  The result can only be
  * retrieved when the computation has completed; the {@code get}

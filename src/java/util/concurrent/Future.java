@@ -93,8 +93,8 @@ package java.util.concurrent;
  * @author Doug Lea
  * @param <V> The result type returned by this Future's {@code get} method
  */
-public interface Future<V> {
-
+public interface Future<V> { //@csy 待了解：表示异步计算的结果
+     //todo @csy 使用实践
     /**
      * Attempts to cancel execution of this task.  This attempt will
      * fail if the task has already completed, has already been cancelled,
@@ -166,4 +166,10 @@ public interface Future<V> {
      */
     V get(long timeout, TimeUnit unit)
         throws InterruptedException, ExecutionException, TimeoutException;
+
+    /**
+     * Future的子类有FutureTask，提供了该类提供了一个Future的基本实现 ，具有启动和取消计算的方法，查询计算是否完整，并检索计算结果
+     * FutureTask 实现了RunnableFuture接口，RunnableFuture继承了Runnable和Future接口，既有线程的功能，又有异步计算的功能
+     * @FunctionalInterface 函数式接口的注解，只有一个抽象方法，可以使用lambda表达式，方法引用或构造函数引用创建函数接口的实例
+     */
 }
