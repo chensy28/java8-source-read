@@ -73,15 +73,16 @@ import sun.reflect.misc.ReflectUtil;
 
 /**
  * Instances of the class {@code Class} represent classes and
- * interfaces in a running Java application（Class类的实例表示在Java应用中运行的类和接口）.  An enum is a kind of
- * class and an annotation is a kind of interface.  Every array also
+ * interfaces in a running Java application（Class类的实例表示在Java应用中运行的类和接口）.
+ * An enum is a kind of class （枚举是一种类）
+ * and an annotation is a kind of interface(注解是一种接口).  Every array also
  * belongs to a class that is reflected as a {@code Class} object
  * that is shared by all arrays with the same element type and number
  * of dimensions.  The primitive Java types ({@code boolean},
  * {@code byte}, {@code char}, {@code short},
  * {@code int}, {@code long}, {@code float}, and
  * {@code double}), and the keyword {@code void} are also
- * represented as {@code Class} objects.
+ * represented as {@code Class} objects（基本类型也有对应的Class对象）.
  *
  * <p> {@code Class} has no public constructor（Class没有公有的构造函数）. Instead {@code Class}
  * objects are constructed automatically by the Java Virtual Machine as classes
@@ -116,10 +117,18 @@ import sun.reflect.misc.ReflectUtil;
  * @see     java.lang.ClassLoader#defineClass(byte[], int, int)
  * @since   JDK1.0
  */
+
+/**
+ * @csy 待了解：每个对象都有一个Class对象，Class对象是有JVM生成的
+ * 可以获取Class中的字段Field、方法Method等信息
+ *
+ * https://blog.csdn.net/a327369238/article/details/52577040  Java源码解析
+ * https://www.jianshu.com/p/b38fcce932f3
+ */
 public final class Class<T> implements java.io.Serializable,
                               GenericDeclaration,
                               Type,
-                              AnnotatedElement { //todo @csy 待了解
+                              AnnotatedElement {
     private static final int ANNOTATION= 0x00002000;
     private static final int ENUM      = 0x00004000;
     private static final int SYNTHETIC = 0x00001000;
@@ -130,7 +139,7 @@ public final class Class<T> implements java.io.Serializable,
     }
 
     /*
-     * Private constructor. Only the Java Virtual Machine creates Class objects.
+     * Private constructor(私有构造函数). Only the Java Virtual Machine creates Class objects.(只有Java虚拟机才能创建Class对象)
      * This constructor is not used and prevents the default constructor being
      * generated.
      */
@@ -507,7 +516,7 @@ public final class Class<T> implements java.io.Serializable,
      *            null.
      * @since JDK1.1
      */
-    public native boolean isAssignableFrom(Class<?> cls);
+    public native boolean isAssignableFrom(Class<?> cls); //todo @csy 方法待了解
 
 
     /**
@@ -729,7 +738,7 @@ public final class Class<T> implements java.io.Serializable,
      *
      * @return the superclass of the class represented by this object.
      */
-    public native Class<? super T> getSuperclass();
+    public native Class<? super T> getSuperclass(); //todo @csy 方法待了解
 
 
     /**
@@ -929,7 +938,7 @@ public final class Class<T> implements java.io.Serializable,
 
     /**
      * Returns the Java language modifiers for this class or interface, encoded
-     * in an integer. The modifiers consist of the Java Virtual Machine's
+     * in an integer（获取类或接口的修饰符，并返回整数）. The modifiers consist of（包含） the Java Virtual Machine's
      * constants for {@code public}, {@code protected},
      * {@code private}, {@code final}, {@code static},
      * {@code abstract} and {@code interface}; they should be decoded
@@ -954,18 +963,18 @@ public final class Class<T> implements java.io.Serializable,
      * @see     java.lang.reflect.Modifier
      * @since JDK1.1
      */
-    public native int getModifiers();
+    public native int getModifiers(); //获取修饰符对应的值
 
 
     /**
-     * Gets the signers of this class.
+     * Gets the signers（签名人） of this class.
      *
      * @return  the signers of this class, or null if there are no signers.  In
      *          particular, this method returns null if this object represents
      *          a primitive type or void.
      * @since   JDK1.1
      */
-    public native Object[] getSigners();
+    public native Object[] getSigners(); //todo @csy 签名人都有哪些？
 
 
     /**
@@ -1066,7 +1075,7 @@ public final class Class<T> implements java.io.Serializable,
         }
     }
 
-    private native Object[] getEnclosingMethod0();
+    private native Object[] getEnclosingMethod0(); //获取封装的方法
 
     private EnclosingMethodInfo getEnclosingMethodInfo() {
         Object[] enclosingInfo = getEnclosingMethod0();
@@ -1077,7 +1086,7 @@ public final class Class<T> implements java.io.Serializable,
         }
     }
 
-    private final static class EnclosingMethodInfo {
+    private final static class EnclosingMethodInfo { //todo @csy 该类的用途
         private Class<?> enclosingClass;
         private String name;
         private String descriptor;
@@ -1486,7 +1495,7 @@ public final class Class<T> implements java.io.Serializable,
      * @since JDK1.1
      */
     @CallerSensitive
-    public Class<?>[] getClasses() {
+    public Class<?>[] getClasses() { //todo @csy 还有哪些类？
         checkMemberAccess(Member.PUBLIC, Reflection.getCallerClass(), false);
 
         // Privileged so this implementation can look at DECLARED classes,
@@ -3240,7 +3249,7 @@ public final class Class<T> implements java.io.Serializable,
     }
 
     // Fetches the factory for reflective objects
-    private static ReflectionFactory getReflectionFactory() {
+    private static ReflectionFactory getReflectionFactory() { //获取反射对象的工厂
         if (reflectionFactory == null) {
             reflectionFactory =
                 java.security.AccessController.doPrivileged

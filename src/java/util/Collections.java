@@ -77,7 +77,7 @@ import java.util.stream.StreamSupport;
  * @since   1.2
  */
 
-public class Collections {
+public class Collections { //todo @csy 待了解
     // Suppresses default constructor, ensuring non-instantiability.
     private Collections() {
     }
