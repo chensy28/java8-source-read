@@ -582,8 +582,8 @@ public interface Collection<E> extends Iterable<E> {
     }
 
     /**
-     * Returns a possibly parallel {@code Stream} with this collection as its
-     * source.  It is allowable for this method to return a sequential stream.
+     * Returns a possibly parallel（并行的） {@code Stream} with this collection as its
+     * source.  It is allowable for this method to return a sequential stream（顺序流）.
      *
      * <p>This method should be overridden when the {@link #spliterator()}
      * method cannot return a spliterator that is {@code IMMUTABLE},
@@ -598,7 +598,7 @@ public interface Collection<E> extends Iterable<E> {
      * collection
      * @since 1.8
      */
-    default Stream<E> parallelStream() {
+    default Stream<E> parallelStream() { //todo @csy 并行流的原理以及使用
         return StreamSupport.stream(spliterator(), true);
     }
 }

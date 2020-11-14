@@ -335,8 +335,8 @@ class Field extends AccessibleObject implements Member {
 
     /**
      * Returns the value of the field represented by this {@code Field}, on
-     * the specified object. The value is automatically wrapped in an
-     * object if it has a primitive type.
+     * the specified object.(返回字段在指定对象中的值) The value is automatically wrapped in an
+     * object if it has a primitive type.（若是基本类型，会自动返回封装类）
      *
      * <p>The underlying field's value is obtained as follows:
      *

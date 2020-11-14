@@ -44,14 +44,15 @@ import java.util.concurrent.TimeUnit;
  * {@link Condition} objects.
  *
  * <p>A lock is a tool for controlling access to a shared resource by
- * multiple threads. Commonly, a lock provides exclusive access to a
+ * multiple threads（锁是一个在多线程共享资源时访问控制的工具）.
+ * Commonly, a lock provides exclusive access to a
  * shared resource: only one thread at a time can acquire the lock and
  * all access to the shared resource requires that the lock be
  * acquired first. However, some locks may allow concurrent access to
- * a shared resource, such as the read lock of a {@link ReadWriteLock}.
+ * a shared resource, such as the read lock of a {@link ReadWriteLock}. //有独享所和共享锁
  *
  * <p>The use of {@code synchronized} methods or statements provides
- * access to the implicit monitor lock associated with every object, but
+ * access to the implicit monitor lock（隐含的监控锁） associated with every object, but
  * forces all lock acquisition and release to occur in a block-structured way:
  * when multiple locks are acquired they must be released in the opposite
  * order, and all locks must be released in the same lexical scope in which
@@ -89,7 +90,7 @@ import java.util.concurrent.TimeUnit;
  * When locking and unlocking occur in different scopes, care must be
  * taken to ensure that all code that is executed while the lock is
  * held is protected by try-finally or try-catch to ensure that the
- * lock is released when necessary.
+ * lock is released （释放）when necessary.
  *
  * <p>{@code Lock} implementations provide additional functionality
  * over the use of {@code synchronized} methods and statements by
@@ -104,7 +105,7 @@ import java.util.concurrent.TimeUnit;
  * detection. If an implementation provides such specialized semantics
  * then the implementation must document those semantics.
  *
- * <p>Note that {@code Lock} instances are just normal objects and can
+ * <p>Note that {@code Lock} instances（锁实例） are just normal objects and can
  * themselves be used as the target in a {@code synchronized} statement.
  * Acquiring the
  * monitor lock of a {@code Lock} instance has no specified relationship
@@ -169,7 +170,7 @@ import java.util.concurrent.TimeUnit;
  * 1）明确锁定的范围
  * 2）用锁、释放锁
  */
-public interface Lock {
+public interface Lock { //@csy 待了解
 
     /**
      * Acquires the lock.

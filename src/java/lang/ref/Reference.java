@@ -30,16 +30,16 @@ import sun.misc.JavaLangRefAccess;
 import sun.misc.SharedSecrets;
 
 /**
- * Abstract base class for reference objects.  This class defines the
- * operations common to all reference objects.  Because reference objects are
- * implemented in close cooperation with the garbage collector, this class may
+ * Abstract base class for reference objects（引用对象的抽象基类）.  This class defines the
+ * operations common（共同的操作） to all reference objects.  Because reference objects are
+ * implemented in close cooperation with the garbage collector（垃圾收集器）, this class may
  * not be subclassed directly.
  *
  * @author   Mark Reinhold
  * @since    1.2
  */
 
-public abstract class Reference<T> { //todo @csy 待了解
+public abstract class Reference<T> { //引用对象
 
     /* A Reference instance is in one of four possible internal states:
      *

@@ -29,10 +29,10 @@ package java.lang.reflect;
  * {@code InvocationHandler} is the interface implemented by
  * the <i>invocation handler</i> of a proxy instance（InvocationHandler是代理实例的调用处理接口）.
  *
- * <p>Each proxy instance has an associated invocation handler.
+ * <p>Each proxy instance has an associated invocation handler.（每一个代理实例都与一个调用处理程序关联）
  * When a method is invoked on a proxy instance, the method
  * invocation is encoded（编码） and dispatched to the {@code invoke}
- * method of its invocation handler.（调用代理实例时，会调用InvocationHandler的invoke方法）
+ * method of its invocation handler.（当代理实例上的方法被调用时，会调用InvocationHandler的invoke方法）
  *
  * @author      Peter Jones
  * @see         Proxy
@@ -42,7 +42,7 @@ public interface InvocationHandler {
 
     /**
      * Processes a method invocation on a proxy instance and returns
-     * the result.  This method will be invoked on an invocation handler
+     * the result（处理代理实例上的方法调用并返回结果）.  This method will be invoked on an invocation handler
      * when a method is invoked on a proxy instance that it is
      * associated with.
      *

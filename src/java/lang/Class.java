@@ -516,7 +516,7 @@ public final class Class<T> implements java.io.Serializable,
      *            null.
      * @since JDK1.1
      */
-    public native boolean isAssignableFrom(Class<?> cls); //todo @csy 方法待了解
+    public native boolean isAssignableFrom(Class<?> cls); // @csy 方法待了解：判断当前的类或接口是否与指定的接口或类相等，或者是指定了的超类或类接口
 
 
     /**
@@ -670,7 +670,7 @@ public final class Class<T> implements java.io.Serializable,
      * permission to ensure it's ok to access the class loader for the class.
      *
      * <p>If this object
-     * represents a primitive type or void, null is returned.
+     * represents a primitive type or void, null is returned（如果是基本类型或void，返回null）.
      *
      * @return  the class loader that loaded the class or interface
      *          represented by this object.
