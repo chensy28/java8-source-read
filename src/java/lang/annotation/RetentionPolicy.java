@@ -34,7 +34,7 @@ package java.lang.annotation;
  * @author  Joshua Bloch
  * @since 1.5
  */
-public enum RetentionPolicy {
+public enum RetentionPolicy { //todo @csy 作用范围待了解？不同的范围要怎么使用的？
     /**
      * Annotations are to be discarded by the compiler.
      */

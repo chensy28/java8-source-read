@@ -38,15 +38,16 @@ import sun.security.util.SecurityConstants;
 /**
  * Class {@code URL} represents a Uniform Resource
  * Locator, a pointer to a "resource" on the World
- * Wide Web. A resource can be something as simple as a file or a
- * directory, or it can be a reference to a more complicated object,
+ * Wide Web（URL是统一资源定位符，指向万维网）.
+ * A resource can be something as simple as a file or a
+ * directory, or it can be a reference to a more complicated object（资源可以是文件、目录或者指向复杂对象的引用）,
  * such as a query to a database or to a search engine. More
  * information on the types of URLs and their formats can be found at:
  * <a href=
  * "http://web.archive.org/web/20051219043731/http://archive.ncsa.uiuc.edu/SDG/Software/Mosaic/Demo/url-primer.html">
  * <i>Types of URL</i></a>
  * <p>
- * In general, a URL can be broken into several parts. Consider the
+ * In general, a URL can be broken into several parts.（url能够划分几个部分） Consider the
  * following example:
  * <blockquote><pre>
  *     http://www.example.com/docs/resource1.html
@@ -72,7 +73,7 @@ import sun.security.util.SecurityConstants;
  *     http://www.example.com:1080/docs/resource1.html
  * </pre></blockquote>
  * <p>
- * The syntax of {@code URL} is defined by  <a
+ * The syntax of {@code URL} is defined by  <a （URL的组成是有语法约束的）
  * href="http://www.ietf.org/rfc/rfc2396.txt"><i>RFC&nbsp;2396: Uniform
  * Resource Identifiers (URI): Generic Syntax</i></a>, amended by <a
  * href="http://www.ietf.org/rfc/rfc2732.txt"><i>RFC&nbsp;2732: Format for
@@ -80,15 +81,15 @@ import sun.security.util.SecurityConstants;
  * also supports scope_ids. The syntax and usage of scope_ids is described
  * <a href="Inet6Address.html#scoped">here</a>.
  * <p>
- * A URL may have appended to it a "fragment", also known
+ * A URL may have appended to it a "fragment"（片段）, also known
  * as a "ref" or a "reference". The fragment is indicated by the sharp
  * sign character "#" followed by more characters. For example,
  * <blockquote><pre>
  *     http://java.sun.com/index.html#chapter1
  * </pre></blockquote>
  * <p>
- * This fragment is not technically part of the URL. Rather, it
- * indicates that after the specified resource is retrieved, the
+ * This fragment is not technically part of the URL（从技术上讲，此片段不是URL的一部分）.
+ * Rather, it indicates that after the specified resource is retrieved, the
  * application is specifically interested in that part of the
  * document that has the tag {@code chapter1} attached to it. The
  * meaning of a tag is resource specific.
