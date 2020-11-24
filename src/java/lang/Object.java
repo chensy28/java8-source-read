@@ -27,14 +27,14 @@ package java.lang;
 
 /**
  * Class {@code Object} is the root of the class hierarchy.
- * Every class has {@code Object} as a superclass. All objects,
+ * Every class has {@code Object} as a superclass（每个类都把Object最为父类）. All objects,
  * including arrays, implement the methods of this class.
  *
  * @author  unascribed
  * @see     java.lang.Class
  * @since   JDK1.0
  */
-public class Object {
+public class Object { //todo @csy-11/24 Object 待了解
 
     private static native void registerNatives();
     static {

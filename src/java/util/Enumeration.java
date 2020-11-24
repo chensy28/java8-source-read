@@ -42,9 +42,9 @@ package java.util;
  * <code>SequenceInputStream</code>.
  * <p>
  * NOTE: The functionality of this interface is duplicated by the Iterator
- * interface.  In addition, Iterator adds an optional remove operation, and
+ * interface.  In addition（另外）, Iterator adds an optional remove operation, and
  * has shorter method names.  New implementations should consider using
- * Iterator in preference to Enumeration.
+ * Iterator in preference to Enumeration.（建议使用Iterator，替代Enumeration）
  *
  * @see     java.util.Iterator
  * @see     java.io.SequenceInputStream

@@ -31,9 +31,10 @@ import java.util.stream.StreamSupport;
 
 /**
  * The root interface in the <i>collection hierarchy</i>.  A collection
- * represents a group of objects, known as its <i>elements</i>.  Some
+ * represents a group of objects（集合呈现出一组对象）, known as its <i>elements</i>.  Some
  * collections allow duplicate elements and others do not.  Some are ordered
- * and others unordered.  The JDK does not provide any <i>direct</i>
+ * and others unordered（有些集合允许重复元素，有些不允许，有些是排好序的，有些未排序）.
+ * The JDK does not provide any <i>direct</i>
  * implementations of this interface: it provides implementations of more
  * specific subinterfaces like <tt>Set</tt> and <tt>List</tt>.  This interface
  * is typically used to pass collections around and manipulate them where
@@ -50,11 +51,11 @@ import java.util.stream.StreamSupport;
  * creates a new collection with the same elements as its argument.  In
  * effect, the latter constructor allows the user to copy any collection,
  * producing an equivalent collection of the desired implementation type.
- * There is no way to enforce this convention (as interfaces cannot contain
+ * There is no way to enforce（执行） this convention (as interfaces cannot contain
  * constructors) but all of the general-purpose <tt>Collection</tt>
  * implementations in the Java platform libraries comply.
  *
- * <p>The "destructive" methods contained in this interface, that is, the
+ * <p>The "destructive"（破坏性的） methods contained in this interface, that is, the
  * methods that modify the collection on which they operate, are specified to
  * throw <tt>UnsupportedOperationException</tt> if this collection does not
  * support the operation.  If this is the case, these methods may, but are not
@@ -64,7 +65,7 @@ import java.util.stream.StreamSupport;
  * but is not required to, throw the exception if the collection to be added
  * is empty.
  *
- * <p><a name="optional-restrictions">
+ * <p><a name="optional-restrictions">  todo @csy-11/24 暂停处
  * Some collection implementations have restrictions on the elements that
  * they may contain.</a>  For example, some implementations prohibit null elements,
  * and some have restrictions on the types of their elements.  Attempting to
@@ -141,7 +142,7 @@ import java.util.stream.StreamSupport;
  * @since 1.2
  */
 
-public interface Collection<E> extends Iterable<E> {
+public interface Collection<E> extends Iterable<E> { //todo @csy-11/24 集合容器流程
     // Query Operations
 
     /**

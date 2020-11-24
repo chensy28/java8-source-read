@@ -32,7 +32,7 @@ import java.util.function.Consumer;
 
 /**
  * Implementing this interface allows an object to be the target of
- * the "for-each loop" statement. See
+ * the "for-each loop" statement（实现该接口的对象，可以使用for-each循环）. See
  * <strong>
  * <a href="{@docRoot}/../technotes/guides/language/foreach.html">For-each Loop</a>
  * </strong>
@@ -42,11 +42,11 @@ import java.util.function.Consumer;
  * @since 1.5
  * @jls 14.14.2 The enhanced for statement
  */
-public interface Iterable<T> {
+public interface Iterable<T> { //Iterable：可迭代的， Iterator：迭代器  todo @csy pause
     /**
      * Returns an iterator over elements of type {@code T}.
      *
-     * @return an Iterator.
+     * @return an Iterator.（返回一个迭代器）
      */
     Iterator<T> iterator();
 
@@ -69,7 +69,7 @@ public interface Iterable<T> {
      * @throws NullPointerException if the specified action is null
      * @since 1.8
      */
-    default void forEach(Consumer<? super T> action) {
+    default void forEach(Consumer<? super T> action) { //默认方法，把实现放在接口中，实现类可以不用实现该方法，可以实现多继承的效果
         Objects.requireNonNull(action);
         for (T t : this) {
             action.accept(t);

@@ -28,9 +28,9 @@ package java.util;
 import java.util.function.Consumer;
 
 /**
- * An iterator over a collection.  {@code Iterator} takes the place of
+ * An iterator over a collection.  {@code Iterator} takes the place of (iterator用来替换Enumeration列举类，对集合进行遍历)
  * {@link Enumeration} in the Java Collections Framework.  Iterators
- * differ from enumerations in two ways:
+ * differ from enumerations in two ways:（iterator与Enumeration不同点）
  *
  * <ul>
  *      <li> Iterators allow the caller to remove elements from the
@@ -89,12 +89,12 @@ public interface Iterator<E> {
      *         been called after the last call to the {@code next}
      *         method
      */
-    default void remove() {
+    default void remove() { //不支持直接调用父类的移除操作，若需要调用，则需要对应实现类实现该方法
         throw new UnsupportedOperationException("remove");
     }
 
     /**
-     * Performs the given action for each remaining element until all elements
+     * Performs the given action for each remaining element（剩余的元素） until all elements
      * have been processed or the action throws an exception.  Actions are
      * performed in the order of iteration, if that order is specified.
      * Exceptions thrown by the action are relayed to the caller.
@@ -110,7 +110,7 @@ public interface Iterator<E> {
      * @throws NullPointerException if the specified action is null
      * @since 1.8
      */
-    default void forEachRemaining(Consumer<? super E> action) {
+    default void forEachRemaining(Consumer<? super E> action) { //加上default默认方法，既新增新功能，又不影响原有功能
         Objects.requireNonNull(action);
         while (hasNext())
             action.accept(next());

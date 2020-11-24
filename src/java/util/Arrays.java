@@ -4274,11 +4274,16 @@ public class Arrays {
         return true;
     }
 
+    /**
+     * 对象深度比较
+     * 1）若是对象是数组类型，则遍历两个数组的所有元素，看是否都相等
+     * 2）若不是数组类型，直接按对象比较e1.equals(e2)
+     */
     static boolean deepEquals0(Object e1, Object e2) {
         assert e1 != null;
         boolean eq;
         if (e1 instanceof Object[] && e2 instanceof Object[])
-            eq = deepEquals ((Object[]) e1, (Object[]) e2);
+            eq = deepEquals ((Object[]) e1, (Object[]) e2); //递归调用，直接或间接调用函数本身
         else if (e1 instanceof byte[] && e2 instanceof byte[])
             eq = equals((byte[]) e1, (byte[]) e2);
         else if (e1 instanceof short[] && e2 instanceof short[])

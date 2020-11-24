@@ -29,13 +29,13 @@ import java.util.function.Supplier;
 
 /**
  * This class consists of {@code static} utility methods for operating
- * on objects.  These utilities include {@code null}-safe or {@code
+ * on objects（这个类由操作对象的静态方法组成）.  These utilities include {@code null}-safe or {@code
  * null}-tolerant methods for computing the hash code of an object,
  * returning a string for an object, and comparing two objects.
  *
  * @since 1.7
  */
-public final class Objects {
+public final class Objects { //对象处理工具类
     private Objects() {
         throw new AssertionError("No java.util.Objects instances for you!");
     }
@@ -55,7 +55,7 @@ public final class Objects {
      * and {@code false} otherwise
      * @see Object#equals(Object)
      */
-    public static boolean equals(Object a, Object b) {
+    public static boolean equals(Object a, Object b) { //引用相等或内容相等 都认为相等
         return (a == b) || (a != null && a.equals(b));
     }
 
@@ -223,7 +223,7 @@ public final class Objects {
      * @return {@code obj} if not {@code null}
      * @throws NullPointerException if {@code obj} is {@code null}
      */
-    public static <T> T requireNonNull(T obj, String message) {
+    public static <T> T requireNonNull(T obj, String message) { //非空校验
         if (obj == null)
             throw new NullPointerException(message);
         return obj;
@@ -243,7 +243,7 @@ public final class Objects {
      * @see java.util.function.Predicate
      * @since 1.8
      */
-    public static boolean isNull(Object obj) {
+    public static boolean isNull(Object obj) { //判断对象是否为空
         return obj == null;
     }
 
