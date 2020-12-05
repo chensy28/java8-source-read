@@ -738,7 +738,7 @@ public final class Class<T> implements java.io.Serializable,
      *
      * @return the superclass of the class represented by this object.
      */
-    public native Class<? super T> getSuperclass(); //todo @csy 方法待了解
+    public native Class<? super T> getSuperclass();
 
 
     /**
@@ -974,7 +974,7 @@ public final class Class<T> implements java.io.Serializable,
      *          a primitive type or void.
      * @since   JDK1.1
      */
-    public native Object[] getSigners(); //todo @csy 签名人都有哪些？
+    public native Object[] getSigners();
 
 
     /**
@@ -1086,7 +1086,7 @@ public final class Class<T> implements java.io.Serializable,
         }
     }
 
-    private final static class EnclosingMethodInfo { //todo @csy 该类的用途
+    private final static class EnclosingMethodInfo {
         private Class<?> enclosingClass;
         private String name;
         private String descriptor;
@@ -1495,7 +1495,7 @@ public final class Class<T> implements java.io.Serializable,
      * @since JDK1.1
      */
     @CallerSensitive
-    public Class<?>[] getClasses() { //todo @csy 还有哪些类？
+    public Class<?>[] getClasses() {
         checkMemberAccess(Member.PUBLIC, Reflection.getCallerClass(), false);
 
         // Privileged so this implementation can look at DECLARED classes,
@@ -2302,7 +2302,7 @@ public final class Class<T> implements java.io.Serializable,
      * @see java.lang.RuntimePermission
      * @since 1.2
      */
-    public java.security.ProtectionDomain getProtectionDomain() { //todo @csy 待了解
+    public java.security.ProtectionDomain getProtectionDomain() {
         SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
             sm.checkPermission(SecurityConstants.GET_PD_PERMISSION);
@@ -3221,7 +3221,7 @@ public final class Class<T> implements java.io.Serializable,
 
         // If the classloader has been initialized with the assertion
         // directives, ask it. Otherwise, ask the VM.
-        synchronized(loader.assertionLock) { //todo @csy synchronized机制了解以及与Lock的了解
+        synchronized(loader.assertionLock) {
             if (loader.classAssertionStatus != null) {
                 return loader.desiredAssertionStatus(getName());
             }

@@ -133,7 +133,7 @@ import java.util.function.Consumer;
  * @see         java.util.HashMap
  * @see         java.lang.ref.WeakReference
  */
-public class WeakHashMap<K,V> // todo @csy 待了解
+public class WeakHashMap<K,V>
     extends AbstractMap<K,V>
     implements Map<K,V> {
 

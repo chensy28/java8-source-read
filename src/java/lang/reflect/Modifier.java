@@ -43,7 +43,7 @@ import sun.reflect.ReflectionFactory;
  * @author Nakul Saraiya
  * @author Kenneth Russell
  */
-public class Modifier { //todo @csy 修饰符待了解
+public class Modifier {
 
     /*
      * Bootstrapping protocol between java.lang and java.lang.reflect

@@ -175,7 +175,7 @@ import sun.security.util.SecurityConstants;
  * @see      #resolveClass(Class)
  * @since 1.0
  */
-public abstract class ClassLoader { //todo @csy 用途以及结构待了解
+public abstract class ClassLoader {
 
     private static native void registerNatives();
     static {

@@ -93,8 +93,7 @@ package java.util.concurrent;
  * @author Doug Lea
  * @param <V> The result type returned by this Future's {@code get} method
  */
-public interface Future<V> { //@csy 待了解：表示异步计算的结果
-     //todo @csy 使用实践
+public interface Future<V> {
     /**
      * Attempts to cancel execution of this task.  This attempt will
      * fail if the task has already completed, has already been cancelled,

@@ -34,7 +34,7 @@ package java.lang;
  * @see     java.lang.Class
  * @since   JDK1.0
  */
-public class Object { //todo @csy-11/24 Object 待了解
+public class Object {
 
     private static native void registerNatives();
     static {

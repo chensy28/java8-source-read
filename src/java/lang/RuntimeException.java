@@ -40,7 +40,7 @@ package java.lang;
  * @jls 11.2 Compile-Time Checking of Exceptions
  * @since   JDK1.0
  */
-public class RuntimeException extends Exception { //todo @csy RuntimeException以及异常了解
+public class RuntimeException extends Exception {
     static final long serialVersionUID = -7034897190745766939L;
 
     /** Constructs a new runtime exception with {@code null} as its

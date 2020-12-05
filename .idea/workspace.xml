@@ -19,19 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e8da77b-983a-4258-bda4-355d26b1be77" name="Default" comment="部分提交01">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="5e8da77b-983a-4258-bda4-355d26b1be77" name="Default" comment="lock阅读">
+      <change beforePath="$PROJECT_DIR$/.idea/java8-sdk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/java8-sdk.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java8-sdk/java/math/BigDecimal$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java8-sdk/java/math/BigDecimal$LongOverflow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java8-sdk/java/math/BigDecimal$StringBuilderHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java8-sdk/java/math/BigDecimal$UnsafeHolder.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/lang/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/Class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/lang/ref/Reference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/ref/Reference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/lang/reflect/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/reflect/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/lang/reflect/InvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/reflect/InvocationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/ClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/ClassLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/Iterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/Iterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/Object.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/Object.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/RuntimeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/RuntimeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/Shutdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/Shutdown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/Thread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/Thread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/annotation/RetentionPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/annotation/RetentionPolicy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/reflect/Method.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/reflect/Method.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/reflect/Modifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/reflect/Modifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/text/Annotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/text/Annotation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/util/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/Collection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/util/concurrent/locks/Lock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/concurrent/locks/Lock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/Collections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/Collections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/Iterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/WeakHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/WeakHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/concurrent/Future.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/concurrent/Future.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/concurrent/locks/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/concurrent/locks/Condition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/util/concurrent/locks/ReentrantLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/concurrent/locks/ReentrantLock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,17 +79,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.34134135" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Arrays">
+  <component name="RunManager" selected="Application.Objects">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -110,6 +117,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="java.util.concurrent.atomic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Objects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java.util.Objects" />
+      <module name="java8-sdk" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,6 +171,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Objects" />
         <item itemvalue="Application.Arrays" />
         <item itemvalue="Application.AtomicBoolean" />
       </list>
@@ -281,7 +303,28 @@
       <option name="project" value="LOCAL" />
       <updated>1603793413726</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="lock阅读">
+      <created>1605346052040</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605346052040</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Annotation阅读">
+      <created>1606125777179</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606125777179</updated>
+    </task>
+    <task id="LOCAL-00016" summary="iterator阅读">
+      <created>1606212822275</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606212822275</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -338,49 +381,63 @@
     <MESSAGE value="部分提交01" />
     <MESSAGE value="Future" />
     <MESSAGE value="class相关阅读" />
-    <option name="LAST_COMMIT_MESSAGE" value="class相关阅读" />
+    <MESSAGE value="lock阅读" />
+    <MESSAGE value="Annotation阅读" />
+    <MESSAGE value="iterator阅读" />
+    <option name="LAST_COMMIT_MESSAGE" value="iterator阅读" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603792083949">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1603792083949" />
-    <state x="671" y="-916" key="CommitChangelistDialog2" timestamp="1605283892589">
+    <state x="671" y="-916" key="CommitChangelistDialog2" timestamp="1607181069742">
       <screen x="-240" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-1009" y="68" key="CommitChangelistDialog2/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1603935377656" />
-    <state x="671" y="-916" key="CommitChangelistDialog2/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1605283892589" />
-    <state x="307" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1603793413029" />
+    <state x="-1009" y="68" key="CommitChangelistDialog2/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1606212821475" />
+    <state x="671" y="-916" key="CommitChangelistDialog2/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1607181069742" />
+    <state x="307" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1605701152295" />
+    <state x="-1479" y="-46" key="CommitChangelistDialog2/0.23.1440.877/-1880.-73.1880.1057@-1880.-73.1880.1057" timestamp="1605752193201" />
+    <state x="2351" y="4" key="CommitChangelistDialog2/36.23.1404.877/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1606707761065" />
+    <state x="-1820" y="4" width="1720" height="880" key="DiffContextDialog" timestamp="1606211754729">
+      <screen x="-1880" y="-96" width="1880" height="1080" />
+    </state>
+    <state x="-1820" y="4" width="1720" height="880" key="DiffContextDialog/0.23.1440.877/-1880.-96.1880.1080@-1880.-96.1880.1080" timestamp="1606211754729" />
     <state x="535" y="-831" key="RollbackChangesDialog" timestamp="1603595560844">
       <screen x="-240" y="-1080" width="1920" height="1080" />
     </state>
     <state x="535" y="-831" key="RollbackChangesDialog/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1603595560844" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1603793415802">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="-1451" y="83" key="SettingsEditor" timestamp="1606207621255">
+      <screen x="-1920" y="-96" width="1920" height="1080" />
     </state>
-    <state x="-1493" y="132" key="Vcs.Push.Dialog.v2/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1602916463279" />
-    <state x="187" y="-852" key="Vcs.Push.Dialog.v2/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1603729157342" />
+    <state x="-1451" y="83" key="SettingsEditor/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1606207621255" />
+    <state x="-1493" y="132" key="Vcs.Push.Dialog.v2" timestamp="1606212823571">
+      <screen x="-1920" y="-96" width="1920" height="1080" />
+    </state>
+    <state x="-1493" y="132" key="Vcs.Push.Dialog.v2/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1606212823571" />
+    <state x="187" y="-852" key="Vcs.Push.Dialog.v2/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1605346053598" />
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1603793415802" />
     <state width="500" height="350" key="documentation.popup.size" timestamp="1603157045050">
       <screen x="-1920" y="-96" width="1920" height="1080" />
     </state>
     <state width="500" height="350" key="documentation.popup.size/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1603157045050" />
-    <state x="420" y="-783" width="600" height="486" key="find.popup" timestamp="1605283934941">
+    <state x="420" y="-783" width="600" height="486" key="find.popup" timestamp="1607181032582">
       <screen x="-240" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-1260" y="201" width="600" height="486" key="find.popup/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1603680927090" />
-    <state x="420" y="-783" width="600" height="486" key="find.popup/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1605283934941" />
+    <state x="-1260" y="201" width="600" height="486" key="find.popup/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1606212380011" />
+    <state x="420" y="-783" width="600" height="486" key="find.popup/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1607181032582" />
     <state x="495" y="248" width="626" height="486" key="find.popup/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1603976608451" />
-    <state x="495" y="248" width="626" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1603792504036" />
+    <state x="2100" y="117" width="600" height="486" key="find.popup/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1606707835248" />
+    <state x="495" y="248" width="626" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1606195009636" />
     <state x="420" y="-783" width="600" height="486" key="find.popup/0.23.1440.877/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1603628104905" />
-    <state x="273" y="-845" width="894" height="812" key="search.everywhere.popup" timestamp="1605283921280">
-      <screen x="-240" y="-1080" width="1920" height="1080" />
+    <state x="-1407" y="139" width="894" height="812" key="search.everywhere.popup" timestamp="1606212759661">
+      <screen x="-1920" y="-96" width="1920" height="1080" />
     </state>
-    <state x="-1407" y="139" width="894" height="812" key="search.everywhere.popup/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1603963586531" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-1920.-96.1920.1080@0.0.1440.900" timestamp="1605066302020" />
-    <state x="273" y="-845" width="894" height="812" key="search.everywhere.popup/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1605283921280" />
+    <state x="-1407" y="139" width="894" height="812" key="search.everywhere.popup/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1606212759661" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-1920.-96.1920.1080@0.0.1440.900" timestamp="1605749560978" />
+    <state x="273" y="-845" width="894" height="812" key="search.everywhere.popup/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1605415944599" />
     <state x="385" y="196" width="671" height="677" key="search.everywhere.popup/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1603976290807" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1603791430949" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606194871195" />
     <state x="273" y="-845" width="894" height="812" key="search.everywhere.popup/0.23.1440.877/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1603628058294" />
   </component>
   <component name="XDebuggerManager">
@@ -393,102 +450,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="Copyright.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.34134135" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>java8-sdk</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.34134135" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.34134135" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

@@ -54,7 +54,7 @@ package java.text;
 * @since 1.2
 */
 
-public class Annotation { //todo @csy 待了解？拿编译后的字节码看下是否注解都继承了该类
+public class Annotation {
 
     /**
      * Constructs an annotation record with the given value, which

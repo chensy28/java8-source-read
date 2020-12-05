@@ -57,7 +57,7 @@ class Shutdown {
     private static int currentRunningHook = 0;
 
     /* The preceding static fields are protected by this lock */
-    private static class Lock { }; //todo @csy 待了解
+    private static class Lock { };
     private static Object lock = new Lock();
 
     /* Lock object for the native halt method */

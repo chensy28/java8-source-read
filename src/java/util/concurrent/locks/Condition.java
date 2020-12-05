@@ -176,7 +176,7 @@ import java.util.Date;
  * @since 1.5
  * @author Doug Lea
  */
-public interface Condition { //todo @csy 待了解Condition
+public interface Condition {
 
     /**
      * Causes the current thread to wait until it is signalled or

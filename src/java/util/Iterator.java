@@ -36,7 +36,7 @@ import java.util.function.Consumer;
  *      <li> Iterators allow the caller to remove elements from the
  *           underlying collection during the iteration with well-defined
  *           semantics.
- *      <li> Method names have been improved.
+ *      <li> Method names have been improved（改善）.
  * </ul>
  *
  * <p>This interface is a member of the

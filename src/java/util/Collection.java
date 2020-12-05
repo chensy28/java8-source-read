@@ -34,10 +34,10 @@ import java.util.stream.StreamSupport;
  * represents a group of objects（集合呈现出一组对象）, known as its <i>elements</i>.  Some
  * collections allow duplicate elements and others do not.  Some are ordered
  * and others unordered（有些集合允许重复元素，有些不允许，有些是排好序的，有些未排序）.
- * The JDK does not provide any <i>direct</i>
+ * The JDK does not provide any <i>direct</i> (Collection没有直接实现类，只有子接口)
  * implementations of this interface: it provides implementations of more
  * specific subinterfaces like <tt>Set</tt> and <tt>List</tt>.  This interface
- * is typically used to pass collections around and manipulate them where
+ * is typically（通常） used to pass collections around and manipulate（操作） them where
  * maximum generality is desired.
  *
  * <p><i>Bags</i> or <i>multisets</i> (unordered collections that may contain
@@ -65,7 +65,7 @@ import java.util.stream.StreamSupport;
  * but is not required to, throw the exception if the collection to be added
  * is empty.
  *
- * <p><a name="optional-restrictions">  todo @csy-11/24 暂停处
+ * <p><a name="optional-restrictions">
  * Some collection implementations have restrictions on the elements that
  * they may contain.</a>  For example, some implementations prohibit null elements,
  * and some have restrictions on the types of their elements.  Attempting to
@@ -142,7 +142,7 @@ import java.util.stream.StreamSupport;
  * @since 1.2
  */
 
-public interface Collection<E> extends Iterable<E> { //todo @csy-11/24 集合容器流程
+public interface Collection<E> extends Iterable<E> {
     // Query Operations
 
     /**
@@ -599,7 +599,7 @@ public interface Collection<E> extends Iterable<E> { //todo @csy-11/24 集合容
      * collection
      * @since 1.8
      */
-    default Stream<E> parallelStream() { //todo @csy 并行流的原理以及使用
+    default Stream<E> parallelStream() {
         return StreamSupport.stream(spliterator(), true);
     }
 }

@@ -42,7 +42,7 @@ import java.util.function.Consumer;
  * @since 1.5
  * @jls 14.14.2 The enhanced for statement
  */
-public interface Iterable<T> { //Iterable：可迭代的， Iterator：迭代器  todo @csy pause
+public interface Iterable<T> { //Iterable：可迭代的， Iterator：迭代器
     /**
      * Returns an iterator over elements of type {@code T}.
      *
