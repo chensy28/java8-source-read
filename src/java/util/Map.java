@@ -31,22 +31,23 @@ import java.util.function.Function;
 import java.io.Serializable;
 
 /**
- * An object that maps keys to values.  A map cannot contain duplicate keys;
- * each key can map to at most one value.
+ * An object that maps keys to values（将键映射到值的对象）.  A map cannot contain duplicate keys（map不能包含重复的键）;
+ * each key can map to at most one value（最多一个值）.
  *
  * <p>This interface takes the place of the <tt>Dictionary</tt> class, which
  * was a totally abstract class rather than an interface.
  *
- * <p>The <tt>Map</tt> interface provides three <i>collection views</i>, which
+ * <p>The <tt>Map</tt> interface provides three <i>collection views（集合视图）</i>, which
  * allow a map's contents to be viewed as a set of keys, collection of values,
  * or set of key-value mappings.  The <i>order</i> of a map is defined as
  * the order in which the iterators on the map's collection views return their
  * elements.  Some map implementations, like the <tt>TreeMap</tt> class, make
  * specific guarantees as to their order; others, like the <tt>HashMap</tt>
- * class, do not.
+ * class, do not（有些map实现，需要保证顺序，如TreeMap，有一些不需要保证顺序，如HashMap）.
  *
  * <p>Note: great care must be exercised if mutable objects are used as map
- * keys.  The behavior of a map is not specified if the value of an object is
+ * keys. （如果将可变对象用作map键，则必须格外小心） //todo @pause-12/06
+ * The behavior of a map is not specified if the value of an object is
  * changed in a manner that affects <tt>equals</tt> comparisons while the
  * object is a key in the map.  A special case of this prohibition is that it
  * is not permissible for a map to contain itself as a key.  While it is

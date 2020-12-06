@@ -26,7 +26,7 @@
 package java.util;
 
 /**
- * The <code>Dictionary</code> class is the abstract parent of any
+ * The <code>Dictionary（字典类）</code> class is the abstract parent of any
  * class, such as <code>Hashtable</code>, which maps keys to values.
  * Every key and every value is an object. In any one <tt>Dictionary</tt>
  * object, every key is associated with at most one value. Given a
@@ -36,8 +36,8 @@ package java.util;
  * As a rule, the <code>equals</code> method should be used by
  * implementations of this class to decide if two keys are the same.
  * <p>
- * <strong>NOTE: This class is obsolete.  New implementations should
- * implement the Map interface, rather than extending this class.</strong>
+ * <strong>NOTE: This class is obsolete（陈旧的）.  New implementations should
+ * implement the Map interface（建议使用Map接口代理Dictionary）, rather than extending this class.</strong>
  *
  * @author  unascribed
  * @see     java.util.Map
