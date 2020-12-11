@@ -136,7 +136,7 @@ import sun.misc.SharedSecrets;
  * @since   1.2
  */
 public class HashMap<K,V> extends AbstractMap<K,V>
-    implements Map<K,V>, Cloneable, Serializable {
+    implements Map<K,V>, Cloneable, Serializable { //todo @pause 12/10 HashMap原理学习
 
     private static final long serialVersionUID = 362498820763181265L;
 

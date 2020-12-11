@@ -34,8 +34,8 @@ import java.io.Serializable;
  * An object that maps keys to values（将键映射到值的对象）.  A map cannot contain duplicate keys（map不能包含重复的键）;
  * each key can map to at most one value（最多一个值）.
  *
- * <p>This interface takes the place of the <tt>Dictionary</tt> class, which
- * was a totally abstract class rather than an interface.
+ * <p>This interface takes the place of the <tt>Dictionary</tt> class, （这个接口替换字典类）
+ * which was a totally abstract class rather than an interface.
  *
  * <p>The <tt>Map</tt> interface provides three <i>collection views（集合视图）</i>, which
  * allow a map's contents to be viewed as a set of keys, collection of values,
@@ -46,7 +46,7 @@ import java.io.Serializable;
  * class, do not（有些map实现，需要保证顺序，如TreeMap，有一些不需要保证顺序，如HashMap）.
  *
  * <p>Note: great care must be exercised if mutable objects are used as map
- * keys. （如果将可变对象用作map键，则必须格外小心） //todo @pause-12/06
+ * keys. （如果将可变对象用作map键，则必须格外小心）
  * The behavior of a map is not specified if the value of an object is
  * changed in a manner that affects <tt>equals</tt> comparisons while the
  * object is a key in the map.  A special case of this prohibition is that it
@@ -56,7 +56,8 @@ import java.io.Serializable;
  * well defined on such a map.
  *
  * <p>All general-purpose map implementation classes should provide two
- * "standard" constructors: a void (no arguments) constructor which creates an
+ * "standard" constructors（实现Map接口的类，需要提供两个标准的构造函数）:
+ * a void (no arguments) constructor which creates an
  * empty map, and a constructor with a single argument of type <tt>Map</tt>,
  * which creates a new map with the same key-value mappings as its argument.
  * In effect, the latter constructor allows the user to copy any map,
@@ -64,7 +65,7 @@ import java.io.Serializable;
  * enforce this recommendation (as interfaces cannot contain constructors) but
  * all of the general-purpose map implementations in the JDK comply.
  *
- * <p>The "destructive" methods contained in this interface, that is, the
+ * <p>The "destructive" methods （破坏性的方法）contained in this interface, that is, the
  * methods that modify the map on which they operate, are specified to throw
  * <tt>UnsupportedOperationException</tt> if this map does not support the
  * operation.  If this is the case, these methods may, but are not required
@@ -73,8 +74,9 @@ import java.io.Serializable;
  * method on an unmodifiable map may, but is not required to, throw the
  * exception if the map whose mappings are to be "superimposed" is empty.
  *
- * <p>Some map implementations have restrictions on the keys and values they
- * may contain.  For example, some implementations prohibit null keys and
+ * Map的实现子类，对Key、Value的限制条件各有不同，所以要针对具体的实例来分析特性
+ * <p>Some map implementations have restrictions（限制条件） on the keys and values they
+ * may contain.  For example, some implementations prohibit（禁止） null keys and
  * values, and some have restrictions on the types of their keys.  Attempting
  * to insert an ineligible key or value throws an unchecked exception,
  * typically <tt>NullPointerException</tt> or <tt>ClassCastException</tt>.
@@ -160,14 +162,14 @@ public interface Map<K,V> {
      *         this map
      * (<a href="{@docRoot}/java/util/Collection.html#optional-restrictions">optional</a>)
      * @throws NullPointerException if the specified key is null and this map
-     *         does not permit null keys
+     *         does not permit null keys （若指定的key为null，并且具体的map不允许null的键，则会抛出空指针异常）
      * (<a href="{@docRoot}/java/util/Collection.html#optional-restrictions">optional</a>)
      */
     boolean containsKey(Object key);
 
     /**
      * Returns <tt>true</tt> if this map maps one or more keys to the
-     * specified value.  More formally, returns <tt>true</tt> if and only if
+     * specified value（一个值value可能会对应多个key）.  More formally, returns <tt>true</tt> if and only if
      * this map contains at least one mapping to a value <tt>v</tt> such that
      * <tt>(value==null ? v==null : value.equals(v))</tt>.  This operation
      * will probably require time linear in the map size for most
@@ -309,6 +311,7 @@ public interface Map<K,V> {
     // Views
 
     /**
+     * 获取map中包含的key对应的集合列表
      * Returns a {@link Set} view of the keys contained in this map.
      * The set is backed by the map, so changes to the map are
      * reflected in the set, and vice-versa.  If the map is modified
@@ -362,7 +365,7 @@ public interface Map<K,V> {
 
     /**
      * A map entry (key-value pair).  The <tt>Map.entrySet</tt> method returns
-     * a collection-view of the map, whose elements are of this class.  The
+     * a collection-view of the map（entrySet返回map的集合视图）, whose elements are of this class.  The
      * <i>only</i> way to obtain a reference to a map entry is from the
      * iterator of this collection-view.  These <tt>Map.Entry</tt> objects are
      * valid <i>only</i> for the duration of the iteration; more formally,
@@ -373,7 +376,7 @@ public interface Map<K,V> {
      * @see Map#entrySet()
      * @since 1.2
      */
-    interface Entry<K,V> {
+    interface Entry<K,V> { //内部接口
         /**
          * Returns the key corresponding to this entry.
          *
