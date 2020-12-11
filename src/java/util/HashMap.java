@@ -39,23 +39,23 @@ import sun.misc.SharedSecrets;
 /**
  * Hash table based implementation of the <tt>Map</tt> interface.  This
  * implementation provides all of the optional map operations（提供了Map的所有操作）, and permits
- * <tt>null</tt> values and the <tt>null</tt> key（允许空的key和value）.  (The <tt>HashMap</tt>
- * class is roughly equivalent to <tt>Hashtable</tt>, except that it is
+ * <tt>null</tt> values and the <tt>null</tt> key（允许key和value的值为null）.  (The <tt>HashMap</tt>
+ * class is roughly equivalent to <tt>Hashtable</tt>, except that it is (与HashTable相比，主要是HashMap是不同步的)
  * unsynchronized and permits nulls.)  This class makes no guarantees as to
- * the order of the map; in particular, it does not guarantee that the order
- * will remain constant over time.
+ * the order of the map（不能保证顺序的）; in particular（特别是）, it does not guarantee that the order
+ * will remain constant over time（不能保证顺序一致保持不变）.
  *
- * <p>This implementation provides constant-time performance for the basic
- * operations (<tt>get</tt> and <tt>put</tt>), assuming the hash function
+ * <p>This implementation provides constant-time（常量时间） performance for the basic
+ * operations (<tt>get</tt> and <tt>put</tt>), （基础操作get、put）assuming the hash function
  * disperses the elements properly among the buckets.  Iteration over
  * collection views requires time proportional to the "capacity" of the
  * <tt>HashMap</tt> instance (the number of buckets) plus its size (the number
  * of key-value mappings).  Thus, it's very important not to set the initial
- * capacity too high (or the load factor too low) if iteration performance is
+ * capacity too high (or the load factor（负载因子） too low) if iteration performance is
  * important.
  *
  * <p>An instance of <tt>HashMap</tt> has two parameters that affect its
- * performance: <i>initial capacity</i> and <i>load factor</i>.  The
+ * performance（影响性能的参数）: <i>initial capacity</i> and <i>load factor</i>. （初始容量和负载因子） The
  * <i>capacity</i> is the number of buckets in the hash table, and the initial
  * capacity is simply the capacity at the time the hash table is created.  The
  * <i>load factor</i> is a measure of how full the hash table is allowed to
@@ -65,7 +65,7 @@ import sun.misc.SharedSecrets;
  * structures are rebuilt) so that the hash table has approximately twice the
  * number of buckets.
  *
- * <p>As a general rule, the default load factor (.75) offers a good
+ * <p>As a general rule, the default load factor (.75) offers a good（负载因子的高低）
  * tradeoff between time and space costs.  Higher values decrease the
  * space overhead but increase the lookup cost (reflected in most of
  * the operations of the <tt>HashMap</tt> class, including
@@ -85,7 +85,7 @@ import sun.misc.SharedSecrets;
  * are {@link Comparable}, this class may use comparison order among
  * keys to help break ties.
  *
- * <p><strong>Note that this implementation is not synchronized.</strong>
+ * <p><strong>Note that this implementation is not synchronized（不是线程安全的）.</strong>
  * If multiple threads access a hash map concurrently, and at least one of
  * the threads modifies the map structurally, it <i>must</i> be
  * synchronized externally.  (A structural modification is any operation
@@ -98,7 +98,7 @@ import sun.misc.SharedSecrets;
  * {@link Collections#synchronizedMap Collections.synchronizedMap}
  * method.  This is best done at creation time, to prevent accidental
  * unsynchronized access to the map:<pre>
- *   Map m = Collections.synchronizedMap(new HashMap(...));</pre>
+ *   Map m = Collections.synchronizedMap(new HashMap(...));</pre> （使用同步方法对HashMap进行线程安全处理）
  *
  * <p>The iterators returned by all of this class's "collection view methods"
  * are <i>fail-fast</i>: if the map is structurally modified at any time after
@@ -109,7 +109,7 @@ import sun.misc.SharedSecrets;
  * arbitrary, non-deterministic behavior at an undetermined time in the
  * future.
  *
- * <p>Note that the fail-fast behavior of an iterator cannot be guaranteed
+ * <p>Note that the fail-fast behavior（快速失败的行为） of an iterator cannot be guaranteed
  * as it is, generally speaking, impossible to make any hard guarantees in the
  * presence of unsynchronized concurrent modification.  Fail-fast iterators
  * throw <tt>ConcurrentModificationException</tt> on a best-effort basis.
@@ -136,7 +136,7 @@ import sun.misc.SharedSecrets;
  * @since   1.2
  */
 public class HashMap<K,V> extends AbstractMap<K,V>
-    implements Map<K,V>, Cloneable, Serializable { //todo @pause 12/10 HashMap原理学习
+    implements Map<K,V>, Cloneable, Serializable {
 
     private static final long serialVersionUID = 362498820763181265L;
 
@@ -231,7 +231,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
      */
 
     /**
-     * The default initial capacity - MUST be a power of two.
+     * The default initial capacity - MUST be a power of two.（默认的初始化容量为16）
      */
     static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // aka 16
 
@@ -243,7 +243,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
     static final int MAXIMUM_CAPACITY = 1 << 30;
 
     /**
-     * The load factor used when none specified in constructor.
+     * The load factor used when none specified in constructor.（默认的负载因子）
      */
     static final float DEFAULT_LOAD_FACTOR = 0.75f;
 
@@ -316,7 +316,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         }
     }
 
-    /* ---------------- Static utilities -------------- */
+    /* ---------------- Static utilities （静态工具类）-------------- */
 
     /**
      * Computes key.hashCode() and spreads (XORs) higher bits of hash
@@ -424,7 +424,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
     // Additionally, if the table array has not been allocated, this
     // field holds the initial array capacity, or zero signifying
     // DEFAULT_INITIAL_CAPACITY.)
-    int threshold;
+    int threshold; //极限、临界值
 
     /**
      * The load factor for the hash table.
@@ -444,7 +444,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
      * @throws IllegalArgumentException if the initial capacity is negative
      *         or the load factor is nonpositive
      */
-    public HashMap(int initialCapacity, float loadFactor) {
+    public HashMap(int initialCapacity, float loadFactor) { //指定初始化容量、负载因子
         if (initialCapacity < 0)
             throw new IllegalArgumentException("Illegal initial capacity: " +
                                                initialCapacity);
@@ -454,7 +454,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
             throw new IllegalArgumentException("Illegal load factor: " +
                                                loadFactor);
         this.loadFactor = loadFactor;
-        this.threshold = tableSizeFor(initialCapacity);
+        this.threshold = tableSizeFor(initialCapacity); //todo @pause 12/11 构造HashMap
     }
 
     /**
