@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e8da77b-983a-4258-bda4-355d26b1be77" name="Default" comment="map阅读-01">
+    <list default="true" id="5e8da77b-983a-4258-bda4-355d26b1be77" name="Default" comment="补12/10阅读">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/lang/Integer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/Integer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/util/HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/HashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/util/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/SortedSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/SortedSet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +39,14 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -57,6 +63,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579221070764" />
@@ -161,6 +169,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
@@ -195,6 +204,8 @@
       <workItem from="1579088400559" duration="2326000" />
       <workItem from="1579165067338" duration="2636000" />
       <workItem from="1579231170339" duration="14000" />
+      <workItem from="1612595539661" duration="961000" />
+      <workItem from="1612621987277" duration="1376000" />
     </task>
     <task id="LOCAL-00001" summary="源码初次提交">
       <created>1538061213501</created>
@@ -322,14 +333,28 @@
       <option name="project" value="LOCAL" />
       <updated>1607248273343</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="补12/10阅读">
+      <created>1607697495832</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1607697495832</updated>
+    </task>
+    <task id="LOCAL-00020" summary="HashMap阅读">
+      <created>1607701684248</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607701684248</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="42723000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -384,63 +409,9 @@
     <MESSAGE value="iterator阅读" />
     <MESSAGE value="去掉todo @csy的标识" />
     <MESSAGE value="map阅读-01" />
-    <option name="LAST_COMMIT_MESSAGE" value="map阅读-01" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603792083949">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1603792083949" />
-    <state x="2351" y="-16" key="CommitChangelistDialog2" timestamp="1607572610576">
-      <screen x="1440" y="-180" width="1920" height="1080" />
-    </state>
-    <state x="-1009" y="68" key="CommitChangelistDialog2/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1606212821475" />
-    <state x="671" y="-916" key="CommitChangelistDialog2/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1607248272952" />
-    <state x="2351" y="-16" key="CommitChangelistDialog2/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1607572610576" />
-    <state x="307" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1605701152295" />
-    <state x="-1479" y="-46" key="CommitChangelistDialog2/0.23.1440.877/-1880.-73.1880.1057@-1880.-73.1880.1057" timestamp="1605752193201" />
-    <state x="2351" y="4" key="CommitChangelistDialog2/36.23.1404.877/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1606707761065" />
-    <state x="-1820" y="4" width="1720" height="880" key="DiffContextDialog" timestamp="1606211754729">
-      <screen x="-1880" y="-96" width="1880" height="1080" />
-    </state>
-    <state x="-1820" y="4" width="1720" height="880" key="DiffContextDialog/0.23.1440.877/-1880.-96.1880.1080@-1880.-96.1880.1080" timestamp="1606211754729" />
-    <state x="535" y="-831" key="RollbackChangesDialog" timestamp="1603595560844">
-      <screen x="-240" y="-1080" width="1920" height="1080" />
-    </state>
-    <state x="535" y="-831" key="RollbackChangesDialog/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1603595560844" />
-    <state x="-1451" y="83" key="SettingsEditor" timestamp="1606207621255">
-      <screen x="-1920" y="-96" width="1920" height="1080" />
-    </state>
-    <state x="-1451" y="83" key="SettingsEditor/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1606207621255" />
-    <state x="187" y="-852" key="Vcs.Push.Dialog.v2" timestamp="1607248274740">
-      <screen x="-240" y="-1080" width="1920" height="1080" />
-    </state>
-    <state x="-1493" y="132" key="Vcs.Push.Dialog.v2/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1606212823571" />
-    <state x="187" y="-852" key="Vcs.Push.Dialog.v2/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1607248274740" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1603793415802" />
-    <state width="500" height="350" key="documentation.popup.size" timestamp="1603157045050">
-      <screen x="-1920" y="-96" width="1920" height="1080" />
-    </state>
-    <state width="500" height="350" key="documentation.popup.size/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1603157045050" />
-    <state x="2100" y="117" width="600" height="486" key="find.popup" timestamp="1607571134350">
-      <screen x="1440" y="-180" width="1920" height="1080" />
-    </state>
-    <state x="-1260" y="201" width="600" height="486" key="find.popup/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1606212380011" />
-    <state x="420" y="-783" width="600" height="486" key="find.popup/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1607248210411" />
-    <state x="495" y="248" width="626" height="486" key="find.popup/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1603976608451" />
-    <state x="2100" y="117" width="600" height="486" key="find.popup/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1607571134350" />
-    <state x="495" y="248" width="626" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1606195009636" />
-    <state x="420" y="-783" width="600" height="486" key="find.popup/0.23.1440.877/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1603628104905" />
-    <state x="1953" y="55" width="894" height="812" key="search.everywhere.popup" timestamp="1607571565210">
-      <screen x="1440" y="-180" width="1920" height="1080" />
-    </state>
-    <state x="-1407" y="139" width="894" height="812" key="search.everywhere.popup/0.0.1440.900/-1920.-96.1920.1080@-1920.-96.1920.1080" timestamp="1606212759661" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-1920.-96.1920.1080@0.0.1440.900" timestamp="1605749560978" />
-    <state x="273" y="-845" width="894" height="812" key="search.everywhere.popup/0.0.1440.900/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1607237751146" />
-    <state x="385" y="196" width="671" height="677" key="search.everywhere.popup/0.0.1440.900/-240.-1080.1920.1080@0.0.1440.900" timestamp="1603976290807" />
-    <state x="1953" y="55" width="894" height="812" key="search.everywhere.popup/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1607571565210" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606194871195" />
-    <state x="273" y="-845" width="894" height="812" key="search.everywhere.popup/0.23.1440.877/-240.-1080.1920.1080@-240.-1080.1920.1080" timestamp="1603628058294" />
+    <MESSAGE value="补12/10阅读" />
+    <MESSAGE value="HashMap阅读" />
+    <option name="LAST_COMMIT_MESSAGE" value="HashMap阅读" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

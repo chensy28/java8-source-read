@@ -27,9 +27,9 @@ package java.util;
 
 /**
  * A {@link Set} that further provides a <i>total ordering</i> on its elements.
- * The elements are ordered using their {@linkplain Comparable natural
+ * The elements are ordered(被排序) using their {@linkplain Comparable natural
  * ordering}, or by a {@link Comparator} typically provided at sorted
- * set creation time.  The set's iterator will traverse the set in
+ * set creation time.  The set's iterator will traverse(遍历) the set in
  * ascending element order. Several additional operations are provided
  * to take advantage of the ordering.  (This interface is the set
  * analogue of {@link SortedMap}.)
