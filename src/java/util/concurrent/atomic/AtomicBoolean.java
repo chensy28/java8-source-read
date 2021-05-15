@@ -51,7 +51,7 @@ public class AtomicBoolean implements java.io.Serializable {
     private static final long serialVersionUID = 4654671469794556979L;
     // setup to use Unsafe.compareAndSwapInt for updates
     /**
-     * todo @chenSy Unsafe使用 以及native源码查看
+     *  Unsafe使用 以及native源码查看
      * Java魔法类：Unsafe应用解析 https://tech.meituan.com/2019/02/14/talk-about-java-magic-class-unsafe.html
      * 什么是CAS? 即比较并替换，实现并发算法时常用到的一种技术。CAS操作包含三个操作数——内存位置、预期原值及新值。执行CAS操作的时候，
      * 将内存位置的值与预期原值比较，如果相匹配，那么处理器会自动将该位置值更新为新值，否则，处理器不做任何操作。
@@ -61,7 +61,7 @@ public class AtomicBoolean implements java.io.Serializable {
     private static final long valueOffset;
 
     /**
-     * todo @chenSy 引入Open Jdk能查看到源码
+     * 引入Open Jdk能查看到源码
      */
     static {
         try {
@@ -71,7 +71,7 @@ public class AtomicBoolean implements java.io.Serializable {
     }
 
     /**
-     * todo @chenSy volatile原理
+     * volatile原理
      * volatile变量的修改可以立刻让所有的线程可见，保证了可见性。而不加volatile变量的字段，JMM不保证普通变量的修改立刻被所有的线程可见
      */
     private volatile int value;
@@ -118,7 +118,7 @@ public class AtomicBoolean implements java.io.Serializable {
     }
 
     /**
-     * todo @chenSy 与compareAndSet有啥区分？本函数的用途？
+     *与compareAndSet有啥区分？本函数的用途？
      * Atomically sets the value to the given updated value
      * if the current value {@code ==} the expected value.
      *

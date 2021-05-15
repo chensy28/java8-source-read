@@ -27,7 +27,7 @@ package java.util.function;
 import java.util.Objects;
 
 /**
- * Represents a function that accepts one argument and produces a result.
+ * Represents a function that accepts one argument and produces a result.（接收一个参数和返回一个结果）
  *
  * <p>This is a <a href="package-summary.html">functional interface</a>
  * whose functional method is {@link #apply(Object)}.
@@ -63,7 +63,7 @@ public interface Function<T, R> {
      *
      * @see #andThen(Function)
      */
-    default <V> Function<V, R> compose(Function<? super V, ? extends T> before) {
+    default <V> Function<V, R> compose(Function<? super V, ? extends T> before) { //compose：组成
         Objects.requireNonNull(before);
         return (V v) -> apply(before.apply(v));
     }

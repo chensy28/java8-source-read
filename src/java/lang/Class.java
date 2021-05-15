@@ -119,7 +119,7 @@ import sun.reflect.misc.ReflectUtil;
  */
 
 /**
- * @csy 待了解：每个对象都有一个Class对象，Class对象是有JVM生成的
+ * 每个对象都有一个Class对象，Class对象是有JVM生成的
  * 可以获取Class中的字段Field、方法Method等信息
  *
  * https://blog.csdn.net/a327369238/article/details/52577040  Java源码解析
@@ -516,7 +516,7 @@ public final class Class<T> implements java.io.Serializable,
      *            null.
      * @since JDK1.1
      */
-    public native boolean isAssignableFrom(Class<?> cls); // @csy 方法待了解：判断当前的类或接口是否与指定的接口或类相等，或者是指定了的超类或类接口
+    public native boolean isAssignableFrom(Class<?> cls); // 方法待了解：判断当前的类或接口是否与指定的接口或类相等，或者是指定了的超类或类接口
 
 
     /**

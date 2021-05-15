@@ -97,7 +97,7 @@ public class AtomicInteger extends Number implements java.io.Serializable {
     }
 
     /**
-     * Sets to the given value.（todo @chenSy 此处能直接修改内存值？不是需要比较交换吗？）
+     * Sets to the given value.
      *
      * @param newValue the new value
      */
@@ -188,7 +188,7 @@ public class AtomicInteger extends Number implements java.io.Serializable {
     }
 
     /**
-     * todo @chenSy 加1再加1等于加2？待使用实践
+     *  加1再加1等于加2？待使用实践
      * Atomically increments by one the current value.
      *
      * @return the updated value
@@ -227,7 +227,7 @@ public class AtomicInteger extends Number implements java.io.Serializable {
      * @since 1.8
      */
     /**
-     * todo @chenSy IntUnaryOperator的含义以及使用？源码查看（一元运算符？可以用+、-、*、/吗）
+     * IntUnaryOperator的含义以及使用？源码查看（一元运算符？可以用+、-、*、/吗）
      */
     public final int getAndUpdate(IntUnaryOperator updateFunction) {
         int prev, next;
@@ -272,7 +272,7 @@ public class AtomicInteger extends Number implements java.io.Serializable {
      * @since 1.8
      */
     /**
-     * todo @chenSy IntBinaryOperator 二元运算符？
+     * IntBinaryOperator 二元运算符？
      */
     public final int getAndAccumulate(int x,
                                       IntBinaryOperator accumulatorFunction) {

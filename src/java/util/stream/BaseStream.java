@@ -36,8 +36,8 @@ import java.util.function.Predicate;
 
 /**
  * Base interface for streams, which are sequences of elements supporting
- * sequential and parallel aggregate operations.  The following example
- * illustrates an aggregate operation using the stream types {@link Stream}
+ * sequential and parallel aggregate operations. （流的基本接口，它是支持的元素序列顺序和并行聚合操作）
+ * The following example illustrates an aggregate operation using the stream types {@link Stream}
  * and {@link IntStream}, computing the sum of the weights of the red widgets:
  *
  * <pre>{@code
@@ -105,7 +105,7 @@ public interface BaseStream<T, S extends BaseStream<T, S>>
     S sequential();
 
     /**
-     * Returns an equivalent stream that is parallel.  May return
+     * Returns an equivalent stream that is parallel.（返回并行的等效流）  May return
      * itself, either because the stream was already parallel, or because
      * the underlying stream state was modified to be parallel.
      *

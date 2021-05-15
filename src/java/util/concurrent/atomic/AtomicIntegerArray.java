@@ -55,7 +55,7 @@ public class AtomicIntegerArray implements java.io.Serializable {
     private final int[] array;
 
     /**
-     * todo @chenSy 此处unsafe.arrayIndexScale操作的用途？numberOfLeadingZeros的用途
+     *  此处unsafe.arrayIndexScale操作的用途？numberOfLeadingZeros的用途
      */
     static {
         int scale = unsafe.arrayIndexScale(int[].class);
@@ -73,7 +73,7 @@ public class AtomicIntegerArray implements java.io.Serializable {
     }
 
     /**
-     * todo @chenSy 验证左移右移的数值？比如左移3，值为多少？
+     * 验证左移右移的数值？比如左移3，值为多少？
      */
     private static long byteOffset(int i) {
         return ((long) i << shift) + base;

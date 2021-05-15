@@ -42,7 +42,7 @@ import sun.util.spi.XmlPropertiesProvider;
 /**
  * The {@code Properties} class represents a persistent set of
  * properties. The {@code Properties} can be saved to a stream
- * or loaded from a stream. Each key and its corresponding value in
+ * or loaded from a stream. Each key and its corresponding(相应地) value in
  * the property list is a string.
  * <p>
  * A property list can contain another property list as its
@@ -396,7 +396,7 @@ class Properties extends Hashtable<Object,Object> {
     /* Read in a "logical line" from an InputStream/Reader, skip all comment
      * and blank lines and filter out those leading whitespace characters
      * (\u0020, \u0009 and \u000c) from the beginning of a "natural line".
-     * Method returns the char length of the "logical line" and stores
+     * Method returns the char length of the "logical line（逻辑线）" and stores
      * the line in "lineBuf".
      */
     class LineReader {

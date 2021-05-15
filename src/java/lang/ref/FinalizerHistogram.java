@@ -59,8 +59,8 @@ final class FinalizerHistogram {
     // entry class layout.
 
     /**
-     * todo @chenSy countMap.computeIfAbsent学习研究
-     * todo @chenSy Function、default 学习及使用
+     * countMap.computeIfAbsent学习研究
+     * Function、default 学习及使用
      */
     static Entry[] getFinalizerHistogram() {
         Map<String, Entry> countMap = new HashMap<>();

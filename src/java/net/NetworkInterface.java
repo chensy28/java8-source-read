@@ -107,7 +107,7 @@ public final class NetworkInterface {
      * @return an Enumeration object with all or a subset of the InetAddresses
      * bound to this network interface
      */
-    public Enumeration<InetAddress> getInetAddresses() { // todo @chenSy 将内部类放在方法里？
+    public Enumeration<InetAddress> getInetAddresses() {
 
         class checkedAddresses implements Enumeration<InetAddress> {
 

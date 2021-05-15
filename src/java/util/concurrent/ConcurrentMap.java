@@ -41,7 +41,7 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 
 /**
- * A {@link java.util.Map} providing thread safety and atomicity
+ * A {@link java.util.Map} providing thread safety（线程安全） and atomicity
  * guarantees.
  *
  * <p>Memory consistency effects: As with other concurrent

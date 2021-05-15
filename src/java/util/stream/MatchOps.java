@@ -68,7 +68,7 @@ final class MatchOps {
     }
 
     /**
-     * Constructs a quantified predicate matcher for a Stream.
+     * Constructs a quantified predicate matcher for a Stream.（为Stream构造一个量化谓词匹配器）
      *
      * @param <T> the type of stream elements
      * @param predicate the {@code Predicate} to apply to stream elements

@@ -170,7 +170,7 @@ import java.util.concurrent.TimeUnit;
  * 1）明确锁定的范围
  * 2）用锁、释放锁
  */
-public interface Lock { //@csy 待了解
+public interface Lock {
 
     /**
      * Acquires the lock.
