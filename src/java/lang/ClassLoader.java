@@ -1131,7 +1131,7 @@ public abstract class ClassLoader {
      *
      * @since  1.2
      */
-    public Enumeration<URL> getResources(String name) throws IOException {
+    public Enumeration<URL> getResources(String name) throws IOException { //todo @csy-001 加载时是怎么找到文件路径的？怎么获取到全路径url的？
         @SuppressWarnings("unchecked")
         Enumeration<URL>[] tmp = (Enumeration<URL>[]) new Enumeration<?>[2];
         if (parent != null) {

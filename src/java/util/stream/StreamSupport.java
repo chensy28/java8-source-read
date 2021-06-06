@@ -37,7 +37,7 @@ import java.util.function.Supplier;
  *
  * @since 1.8
  */
-public final class StreamSupport {
+public final class StreamSupport { //todo @csy-001 功能用途是什么？
 
     // Suppresses default constructor, ensuring non-instantiability.
     private StreamSupport() {}

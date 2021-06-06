@@ -293,7 +293,7 @@ import java.util.function.LongConsumer;
  * @see Collection
  * @since 1.8
  */
-public interface Spliterator<T> {
+public interface Spliterator<T> { //todo @csy-001 功能用途是什么？
     /**
      * If a remaining element exists, performs the given action on it,
      * returning {@code true}; else returns {@code false}.  If this

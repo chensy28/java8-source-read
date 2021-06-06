@@ -41,7 +41,7 @@ package java.util.concurrent;
  * @since 1.5
  * @author Doug Lea
  */
-public interface RejectedExecutionHandler {
+public interface RejectedExecutionHandler { //todo @csy-001 拒绝连接的策略是怎样
 
     /**
      * Method that may be invoked by a {@link ThreadPoolExecutor} when

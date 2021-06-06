@@ -473,7 +473,7 @@ public interface List<E> extends Collection<E> {
      * @since 1.8
      */
     @SuppressWarnings({"unchecked", "rawtypes"})
-    default void sort(Comparator<? super E> c) {
+    default void sort(Comparator<? super E> c) { //todo @csy-001 待自定义比较器，做排序逻辑
         Object[] a = this.toArray();
         Arrays.sort(a, (Comparator) c);
         ListIterator<E> i = this.listIterator();
