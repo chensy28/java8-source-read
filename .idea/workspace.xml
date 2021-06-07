@@ -19,17 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e8da77b-983a-4258-bda4-355d26b1be77" name="Default" comment="5/15前阅读">
+    <list default="true" id="5e8da77b-983a-4258-bda4-355d26b1be77" name="Default" comment="6.3号相关阅读">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/io/BufferedReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/io/BufferedReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/lang/ClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/ClassLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/util/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/List.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/util/ServiceLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/ServiceLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/util/Spliterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/Spliterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/util/concurrent/ConcurrentHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/concurrent/ConcurrentHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/util/concurrent/FutureTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/concurrent/FutureTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/util/concurrent/RejectedExecutionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/concurrent/RejectedExecutionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/util/stream/StreamSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/stream/StreamSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/Class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/reflect/Constructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/reflect/Constructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/Collections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/Collections.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,6 +216,7 @@
       <workItem from="1621234326034" duration="15000" />
       <workItem from="1622684338641" duration="4018000" />
       <workItem from="1622704108680" duration="608000" />
+      <workItem from="1623020030748" duration="2665000" />
     </task>
     <task id="LOCAL-00001" summary="源码初次提交">
       <created>1538061213501</created>
@@ -377,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621094588970</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="6.3号相关阅读">
+      <created>1623020125111</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1623020125111</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -443,7 +445,8 @@
     <MESSAGE value="HashMap阅读" />
     <MESSAGE value="1" />
     <MESSAGE value="5/15前阅读" />
-    <option name="LAST_COMMIT_MESSAGE" value="5/15前阅读" />
+    <MESSAGE value="6.3号相关阅读" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.3号相关阅读" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

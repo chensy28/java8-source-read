@@ -371,7 +371,7 @@ public class Collections {
      *         its list-iterator does not support the <tt>set</tt> operation.
      */
     @SuppressWarnings({"rawtypes", "unchecked"})
-    public static void reverse(List<?> list) {
+    public static void reverse(List<?> list) { //todo @csy-002 是指元素翻转吗？逻辑是怎样的？
         int size = list.size();
         if (size < REVERSE_THRESHOLD || list instanceof RandomAccess) {
             for (int i=0, mid=size>>1, j=size-1; i<mid; i++, j--)

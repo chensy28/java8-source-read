@@ -933,7 +933,7 @@ public final class Class<T> implements java.io.Serializable,
      * @see     java.lang.reflect.Array
      * @since JDK1.1
      */
-    public native Class<?> getComponentType();
+    public native Class<?> getComponentType(); //todo @csy-002 数组会返回怎样的类型？
 
 
     /**
