@@ -791,7 +791,7 @@ public interface IntStream extends BaseStream<Integer, IntStream> {
      * @return a sequential {@code IntStream} for the range of {@code int}
      *         elements
      */
-    public static IntStream range(int startInclusive, int endExclusive) {
+    public static IntStream range(int startInclusive, int endExclusive) { //todo @csy-003 这与for循环类似使用吗？
         if (startInclusive >= endExclusive) {
             return empty();
         } else {

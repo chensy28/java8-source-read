@@ -1388,7 +1388,7 @@ public final class Class<T> implements java.io.Serializable,
      * {@code null} otherwise.
      * @since 1.5
      */
-    public String getCanonicalName() {
+    public String getCanonicalName() { //todo @csy-003 该方法是怎么处理的
         if (isArray()) {
             String canonicalName = getComponentType().getCanonicalName();
             if (canonicalName != null)

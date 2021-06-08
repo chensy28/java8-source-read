@@ -2936,7 +2936,7 @@ public final class String
      * @see  java.util.Formatter
      * @since  1.5
      */
-    public static String format(String format, Object... args) {
+    public static String format(String format, Object... args) { //todo @csy-003 格式化待了解，是怎么用上占位符的？
         return new Formatter().format(format, args).toString();
     }
 

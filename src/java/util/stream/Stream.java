@@ -872,7 +872,7 @@ public interface Stream<T> extends BaseStream<T, Stream<T>> {
      * @return {@code true} if any elements of the stream match the provided
      * predicate, otherwise {@code false}
      */
-    boolean anyMatch(Predicate<? super T> predicate);
+    boolean anyMatch(Predicate<? super T> predicate); //todo @csy-003 此处的处理逻辑是怎样的？
 
     /**
      * Returns whether all elements of this stream match the provided predicate.

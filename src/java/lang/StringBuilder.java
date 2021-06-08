@@ -97,7 +97,7 @@ public final class StringBuilder
      * @throws     NegativeArraySizeException  if the {@code capacity}
      *               argument is less than {@code 0}.
      */
-    public StringBuilder(int capacity) {
+    public StringBuilder(int capacity) { //todo @csy-003 设置了容量后，超过容量大小是否会报错
         super(capacity);
     }
 
