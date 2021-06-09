@@ -48,7 +48,7 @@ abstract class AbstractStringBuilder implements Appendable, CharSequence {
     /**
      * The value is used for character storage.
      */
-    char[] value;
+    char[] value;  //StringBuilder底层的数据结构是字符数组
 
     /**
      * The count is the number of characters used.
@@ -64,7 +64,7 @@ abstract class AbstractStringBuilder implements Appendable, CharSequence {
     /**
      * Creates an AbstractStringBuilder of the specified capacity.
      */
-    AbstractStringBuilder(int capacity) {
+    AbstractStringBuilder(int capacity) { //创建一个指定容量的数组
         value = new char[capacity];
     }
 

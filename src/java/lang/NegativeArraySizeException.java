@@ -34,6 +34,10 @@ package java.lang;
 public
 class NegativeArraySizeException extends RuntimeException {
     private static final long serialVersionUID = -8960118058596991861L;
+    /**
+     * @csy-003 创建数组时，数组大小指定为负数时，抛的异常。new char[-1]，这个没有主动看到错误，是编译器主动抛出的吗？
+     * 解：运行时，虚拟机抛出的异常
+     */
 
     /**
      * Constructs a <code>NegativeArraySizeException</code> with no

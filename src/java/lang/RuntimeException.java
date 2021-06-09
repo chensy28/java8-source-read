@@ -33,6 +33,7 @@ package java.lang;
  * <p>{@code RuntimeException} and its subclasses are <em>unchecked
  * exceptions</em>.  Unchecked exceptions do <em>not</em> need to be
  * declared in a method or constructor's {@code throws} clause if they
+ * （RuntimeException运行时异常是未检查异常，不需要再方法或构造函数上声明）
  * can be thrown by the execution of the method or constructor and
  * propagate outside the method or constructor boundary.
  *

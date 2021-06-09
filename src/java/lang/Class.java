@@ -125,6 +125,7 @@ import sun.reflect.misc.ReflectUtil;
  * https://blog.csdn.net/a327369238/article/details/52577040  Java源码解析
  * https://www.jianshu.com/p/b38fcce932f3
  */
+// todo @csy-003 Class的数据结构是怎样的？
 public final class Class<T> implements java.io.Serializable,
                               GenericDeclaration,
                               Type,
@@ -536,7 +537,7 @@ public final class Class<T> implements java.io.Serializable,
      *          {@code false} otherwise.
      * @since   JDK1.1
      */
-    public native boolean isArray();
+    public native boolean isArray(); //判断当前的Class对象是否是数组类型
 
 
     /**
@@ -1266,7 +1267,7 @@ public final class Class<T> implements java.io.Serializable,
      * @since 1.5
      */
     @CallerSensitive
-    public Class<?> getEnclosingClass() throws SecurityException {
+    public Class<?> getEnclosingClass() throws SecurityException { //todo @csy-003 什么是闭合类
         // There are five kinds of classes (or interfaces):
         // a) Top level classes
         // b) Nested classes (static member classes)
@@ -1388,7 +1389,12 @@ public final class Class<T> implements java.io.Serializable,
      * {@code null} otherwise.
      * @since 1.5
      */
-    public String getCanonicalName() { //todo @csy-003 该方法是怎么处理的
+
+    /**
+     * todo @csy-003 该方法是怎么处理的
+     * Canonical: 简洁的
+     */
+    public String getCanonicalName() { //获取简洁的类名，如com.test包下有Apple，输入的结果为com.test.Apple
         if (isArray()) {
             String canonicalName = getComponentType().getCanonicalName();
             if (canonicalName != null)

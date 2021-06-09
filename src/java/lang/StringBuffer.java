@@ -98,6 +98,10 @@ import java.util.Arrays;
     extends AbstractStringBuilder
     implements java.io.Serializable, CharSequence
 {
+    /**
+     * StringBuffer是线程安全的，它的成员方法都是用synchronized修饰的，而StringBuilder是线程不安全的，没有用synchronized修饰
+     * StringBuffer与StringBuilder都是字符串变量，内容是可以变更的
+     */
 
     /**
      * A cache of the last value returned by toString. Cleared

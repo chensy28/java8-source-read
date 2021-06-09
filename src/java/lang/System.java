@@ -45,7 +45,7 @@ import sun.reflect.annotation.AnnotationType;
 
 /**
  * The <code>System</code> class contains several useful class fields
- * and methods. It cannot be instantiated.
+ * and methods. It cannot be instantiated.(不能被实例化)
  *
  * <p>Among the facilities provided by the <code>System</code> class
  * are standard input, standard output, and error output streams;
