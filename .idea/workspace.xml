@@ -19,14 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e8da77b-983a-4258-bda4-355d26b1be77" name="Default" comment="问题点纪要">
+    <list default="true" id="5e8da77b-983a-4258-bda4-355d26b1be77" name="Default" comment="补6.8问题点纪要">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/lang/AbstractStringBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/AbstractStringBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/lang/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/Class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/lang/NegativeArraySizeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/NegativeArraySizeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/lang/RuntimeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/RuntimeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/lang/StringBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/StringBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/lang/System.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/System.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/ExceptionInInitializerError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/ExceptionInInitializerError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/Iterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/Iterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/Thread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/Thread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/ThreadLocal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/ThreadLocal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/ref/WeakReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/ref/WeakReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/function/Predicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/function/Predicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/function/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/function/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/stream/IntStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/stream/IntStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/stream/Stream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/stream/Stream.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +159,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -237,6 +252,8 @@
       <workItem from="1623020030748" duration="2665000" />
       <workItem from="1623109945783" duration="4274000" />
       <workItem from="1623138375161" duration="4233000" />
+      <workItem from="1623200899789" duration="4554000" />
+      <workItem from="1623235760577" duration="3694000" />
     </task>
     <task id="LOCAL-00001" summary="源码初次提交">
       <created>1538061213501</created>
@@ -413,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623137482397</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="补6.8问题点纪要">
+      <created>1623201008756</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1623201008756</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -482,7 +506,8 @@
     <MESSAGE value="6.3号相关阅读" />
     <MESSAGE value="6.7号相关阅读" />
     <MESSAGE value="问题点纪要" />
-    <option name="LAST_COMMIT_MESSAGE" value="问题点纪要" />
+    <MESSAGE value="补6.8问题点纪要" />
+    <option name="LAST_COMMIT_MESSAGE" value="补6.8问题点纪要" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

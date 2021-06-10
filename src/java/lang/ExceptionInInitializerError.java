@@ -41,7 +41,7 @@ package java.lang;
  * @author  Frank Yellin
  * @since   JDK1.1
  */
-public class ExceptionInInitializerError extends LinkageError {
+public class ExceptionInInitializerError extends LinkageError { //todo @csy-004 功能用途了解？
     /**
      * Use serialVersionUID from JDK 1.1.X for interoperability
      */

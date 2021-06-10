@@ -138,7 +138,7 @@ import sun.security.util.SecurityConstants;
  * @since   JDK1.0
  */
 public
-class Thread implements Runnable {
+class Thread implements Runnable { //todo @csy-004 数据结构以及常用的功能是怎样的？
     /* Make sure registerNatives is the first thing <clinit> does. */
     private static native void registerNatives();
     static {

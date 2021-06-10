@@ -38,7 +38,7 @@ package java.util.function;
  * @since 1.8
  */
 @FunctionalInterface
-public interface Supplier<T> {
+public interface Supplier<T> { //todo @csy-004 该接口的功能用途是怎样的？
 
     /**
      * Gets a result.

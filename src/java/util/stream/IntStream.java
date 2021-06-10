@@ -768,7 +768,7 @@ public interface IntStream extends BaseStream<Integer, IntStream> {
      * @param s the {@code IntSupplier} for generated elements
      * @return a new infinite sequential unordered {@code IntStream}
      */
-    public static IntStream generate(IntSupplier s) {
+    public static IntStream generate(IntSupplier s) { //todo @csy-004 待了解，以及IntStream.range代替循环方式了解
         Objects.requireNonNull(s);
         return StreamSupport.intStream(
                 new StreamSpliterators.InfiniteSupplyingSpliterator.OfInt(Long.MAX_VALUE, s), false);

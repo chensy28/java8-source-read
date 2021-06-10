@@ -30,10 +30,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Supplier;
 
 /**
- * This class provides thread-local variables.  These variables differ from
+ * This class provides thread-local variables（线程局部变量）.  These variables differ from
  * their normal counterparts in that each thread that accesses one (via its
  * {@code get} or {@code set} method) has its own, independently initialized
- * copy of the variable.  {@code ThreadLocal} instances are typically private
+ * copy of the variable（变量副本）.  {@code ThreadLocal} instances are typically private
  * static fields in classes that wish to associate state with a thread (e.g.,
  * a user ID or Transaction ID).
  *
@@ -62,7 +62,7 @@ import java.util.function.Supplier;
  *     }
  * }
  * </pre>
- * <p>Each thread holds an implicit reference to its copy of a thread-local
+ * <p>Each thread holds an implicit（隐含的） reference to its copy of a thread-local
  * variable as long as the thread is alive and the {@code ThreadLocal}
  * instance is accessible; after a thread goes away, all of its copies of
  * thread-local instances are subject to garbage collection (unless other
@@ -70,6 +70,13 @@ import java.util.function.Supplier;
  *
  * @author  Josh Bloch and Doug Lea
  * @since   1.2
+ */
+
+/**
+ * @csy-004 用途是怎样的？若线程中再起线程，还能取到值吗？
+ * 解：1）ThreadLocal表示每个线程维护的局部变量，相互独立（变量副本）
+ *    用于设置和获取线程变量的值
+ *    2）取不到，各个线程维护各自的值
  */
 public class ThreadLocal<T> {
     /**
@@ -197,7 +204,7 @@ public class ThreadLocal<T> {
      *        this thread-local.
      */
     public void set(T value) {
-        Thread t = Thread.currentThread();
+        Thread t = Thread.currentThread(); //当前线程对象的引用
         ThreadLocalMap map = getMap(t);
         if (map != null)
             map.set(this, value);
@@ -295,7 +302,7 @@ public class ThreadLocal<T> {
      * used, stale entries are guaranteed to be removed only when
      * the table starts running out of space.
      */
-    static class ThreadLocalMap {
+    static class ThreadLocalMap { //todo @csy-004 该类的功能用途是什么？
 
         /**
          * The entries in this hash map extend WeakReference, using

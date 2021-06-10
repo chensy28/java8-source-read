@@ -37,7 +37,7 @@ import java.util.Objects;
  * @since 1.8
  */
 @FunctionalInterface
-public interface Predicate<T> {
+public interface Predicate<T> { //todo @csy-004 此处待了解和使用，什么叫谓词
 
     /**
      * Evaluates this predicate on the given argument.

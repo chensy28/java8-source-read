@@ -97,7 +97,7 @@ public interface Iterable<T> { //Iterable：可迭代的， Iterator：迭代器
      * {@code Iterable}.
      * @since 1.8
      */
-    default Spliterator<T> spliterator() {
+    default Spliterator<T> spliterator() { //todo @csy-004 此方法的用途是怎样的？
         return Spliterators.spliteratorUnknownSize(iterator(), 0);
     }
 }

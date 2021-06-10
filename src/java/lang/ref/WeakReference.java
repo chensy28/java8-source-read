@@ -45,7 +45,7 @@ package java.lang.ref;
  * @since    1.2
  */
 
-public class WeakReference<T> extends Reference<T> { //todo 10/25 弱引用了解
+public class WeakReference<T> extends Reference<T> { //todo @csy-004 弱引用了解
 
     /**
      * Creates a new weak reference that refers to the given object.  The new

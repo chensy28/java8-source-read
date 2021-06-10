@@ -524,7 +524,7 @@ public interface Stream<T> extends BaseStream<T, Stream<T>> {
      *
      * @return an array containing the elements of this stream
      */
-    Object[] toArray();
+    Object[] toArray(); //todo @csy-004 待了解，如toArray(LoadingStrategy[]::new)，为啥要调用new方法
 
     /**
      * Returns an array containing the elements of this stream, using the
