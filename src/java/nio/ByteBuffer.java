@@ -262,7 +262,7 @@ package java.nio;
 public abstract class ByteBuffer
     extends Buffer
     implements Comparable<ByteBuffer>
-{
+{ //todo @pause 待了解
 
     // These fields are declared here rather than in Heap-X-Buffer in order to
     // reduce the number of virtual method invocations needed to access these

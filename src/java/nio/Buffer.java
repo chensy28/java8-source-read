@@ -28,7 +28,7 @@ package java.nio;
 import java.util.Spliterator;
 
 /**
- * A container for data of a specific primitive type.
+ * A container for data of a specific primitive type（存储指定基本类型的容器）.
  *
  * <p> A buffer is a linear, finite sequence of elements of a specific
  * primitive type.  Aside from its content, the essential properties of a
@@ -41,7 +41,7 @@ import java.util.Spliterator;
  *
  *   <p> A buffer's <i>limit</i> is the index of the first element that should
  *   not be read or written.  A buffer's limit is never negative and is never
- *   greater than its capacity.  </p>
+ *   greater than its capacity.  </p> （不是负数且不超过容量）
  *
  *   <p> A buffer's <i>position</i> is the index of the next element to be
  *   read or written.  A buffer's position is never negative and is never
@@ -274,8 +274,8 @@ public abstract class Buffer {
         if ((newLimit > capacity) || (newLimit < 0))
             throw new IllegalArgumentException();
         limit = newLimit;
-        if (position > limit) position = limit;
-        if (mark > limit) mark = -1;
+        if (position > limit) position = limit; //position超过限制数，按最新的限制数设置
+        if (mark > limit) mark = -1; //mark超过限制数，回退到初始值-1
         return this;
     }
 
@@ -353,7 +353,7 @@ public abstract class Buffer {
      *
      * @return  This buffer
      */
-    public final Buffer flip() {
+    public final Buffer flip() { //读数据、写数据交替执行时，需要执行
         limit = position;
         position = 0;
         mark = -1;
