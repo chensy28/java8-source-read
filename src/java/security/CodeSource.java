@@ -46,7 +46,7 @@ import sun.misc.IOUtils;
  * @author Roland Schemers
  */
 
-public class CodeSource implements java.io.Serializable {
+public class CodeSource implements java.io.Serializable { //todo @csy-005-P3 此类的功能用途是啥？
 
     private static final long serialVersionUID = 4977541819976013951L;
 

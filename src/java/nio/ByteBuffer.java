@@ -262,7 +262,7 @@ package java.nio;
 public abstract class ByteBuffer
     extends Buffer
     implements Comparable<ByteBuffer>
-{ //todo @pause 待了解
+{
 
     // These fields are declared here rather than in Heap-X-Buffer in order to
     // reduce the number of virtual method invocations needed to access these
@@ -278,7 +278,7 @@ public abstract class ByteBuffer
     ByteBuffer(int mark, int pos, int lim, int cap,   // package-private
                  byte[] hb, int offset)
     {
-        super(mark, pos, lim, cap);
+        super(mark, pos, lim, cap); //调用父类构造函数，构建Buffer对象 ，todo @csy-005-P3 抽象类不能实例化，为啥此处可以用super()方法调用父类构造函数？
         this.hb = hb;
         this.offset = offset;
     }

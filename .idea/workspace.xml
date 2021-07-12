@@ -19,9 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e8da77b-983a-4258-bda4-355d26b1be77" name="Default" comment="补6.8问题点纪要">
+    <list default="true" id="5e8da77b-983a-4258-bda4-355d26b1be77" name="Default" comment="buffer阅读">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/nio/Buffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/nio/Buffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/io/ObjectOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/io/ObjectOutputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lang/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/Class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/nio/Bits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/nio/Bits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/nio/ByteBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/nio/ByteBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/nio/DirectByteBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/nio/DirectByteBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/security/AccessControlContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/security/AccessControlContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/security/AccessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/security/AccessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/security/CodeSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/security/CodeSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/security/PrivilegedAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/security/PrivilegedAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/security/ProtectionDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/security/ProtectionDomain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/IdentityHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/IdentityHashMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,13 +166,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -252,7 +264,8 @@
       <workItem from="1623200899789" duration="4554000" />
       <workItem from="1623235760577" duration="3694000" />
       <workItem from="1625815304690" duration="2416000" />
-      <workItem from="1625821509724" duration="1711000" />
+      <workItem from="1625821509724" duration="2469000" />
+      <workItem from="1626065216305" duration="6420000" />
     </task>
     <task id="LOCAL-00001" summary="源码初次提交">
       <created>1538061213501</created>
@@ -436,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623201008756</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="buffer阅读">
+      <created>1625823633799</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1625823633805</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -506,7 +526,8 @@
     <MESSAGE value="6.7号相关阅读" />
     <MESSAGE value="问题点纪要" />
     <MESSAGE value="补6.8问题点纪要" />
-    <option name="LAST_COMMIT_MESSAGE" value="补6.8问题点纪要" />
+    <MESSAGE value="buffer阅读" />
+    <option name="LAST_COMMIT_MESSAGE" value="buffer阅读" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -525,6 +546,11 @@
           <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/src.zip!/java/nio/Buffer.java</url>
           <line>174</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java/nio/ByteBuffer.java</url>
+          <line>310</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

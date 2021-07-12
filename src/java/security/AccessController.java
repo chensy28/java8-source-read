@@ -295,7 +295,7 @@ public final class AccessController {
      */
 
     @CallerSensitive
-    public static native <T> T doPrivileged(PrivilegedAction<T> action);
+    public static native <T> T doPrivileged(PrivilegedAction<T> action); //todo @csy-005-P3 方法的功能用途是怎样的？
 
     /**
      * Performs the specified {@code PrivilegedAction} with privileges

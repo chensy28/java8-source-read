@@ -39,7 +39,7 @@ package java.security;
  * @see PrivilegedExceptionAction
  */
 
-public interface PrivilegedAction<T> {
+public interface PrivilegedAction<T> { //todo @csy-005-P3 功能用途是什么？
     /**
      * Performs the computation.  This method will be called by
      * {@code AccessController.doPrivileged} after enabling privileges.

@@ -117,7 +117,7 @@ class DirectByteBuffer
     DirectByteBuffer(int cap) {                   // package-private
 
         super(-1, 0, cap, cap);
-        boolean pa = VM.isDirectMemoryPageAligned();
+        boolean pa = VM.isDirectMemoryPageAligned(); //todo @csy-005-P3 VM属于什么类？为什么看不到源码？
         int ps = Bits.pageSize();
         long size = Math.max(1L, (long)cap + (pa ? ps : 0));
         Bits.reserveMemory(size, cap);

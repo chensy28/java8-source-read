@@ -74,7 +74,7 @@ import sun.security.util.SecurityConstants;
  * @author Roland Schemers
  */
 
-public final class AccessControlContext {
+public final class AccessControlContext { //todo @csy-005-P3 访问控制上下文都有哪些内容？
 
     private ProtectionDomain context[];
     // isPrivileged and isAuthorized are referenced by the VM - do not remove
@@ -548,7 +548,7 @@ public final class AccessControlContext {
      * The limited privilege scope can indirectly flow from the inherited
      * parent thread or an assigned context previously captured by getContext().
      */
-    AccessControlContext optimize() {
+    AccessControlContext optimize() { //todo @csy-005-P3 此方法的功能用途是怎样的？
         // the assigned (privileged or inherited) context
         AccessControlContext acc;
         DomainCombiner combiner = null;

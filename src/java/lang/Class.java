@@ -646,7 +646,7 @@ public final class Class<T> implements java.io.Serializable,
      * @return  the name of the class or interface
      *          represented by this object.
      */
-    public String getName() {
+    public String getName() { //todo @csy-005-P3 待了解
         String name = this.name;
         if (name == null)
             this.name = name = getName0();
@@ -1793,7 +1793,7 @@ public final class Class<T> implements java.io.Serializable,
      * @since JDK1.1
      */
     @CallerSensitive
-    public Method getMethod(String name, Class<?>... parameterTypes)
+    public Method getMethod(String name, Class<?>... parameterTypes) //todo @csy-005-P3 待了解
         throws NoSuchMethodException, SecurityException {
         checkMemberAccess(Member.PUBLIC, Reflection.getCallerClass(), true);
         Method method = getMethod0(name, parameterTypes, true);

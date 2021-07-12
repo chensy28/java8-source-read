@@ -159,7 +159,7 @@ import sun.reflect.misc.ReflectUtil;
  * @see <a href="../../../platform/serialization/spec/output.html">Object Serialization Specification, Section 2, Object Output Classes</a>
  * @since       JDK1.1
  */
-public class ObjectOutputStream
+public class ObjectOutputStream //todo @csy-005-P2 待了解，以及与序列化、反序列化都关联
     extends OutputStream implements ObjectOutput, ObjectStreamConstants
 {
 
@@ -760,7 +760,7 @@ public class ObjectOutputStream
      * @throws  IOException if I/O errors occur while writing to the underlying
      *          stream
      */
-    public void writeByte(int val) throws IOException  {
+    public void writeByte(int val) throws IOException  { //todo @csy-005-P3 写字节是指啥？
         bout.writeByte(val);
     }
 

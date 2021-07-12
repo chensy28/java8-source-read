@@ -39,9 +39,9 @@ import sun.security.util.Debug;
 import sun.security.util.SecurityConstants;
 
 /**
- * The ProtectionDomain class encapsulates the characteristics of a domain,
- * which encloses a set of classes whose instances are granted a set
- * of permissions when being executed on behalf of a given set of Principals.
+ * The ProtectionDomain class encapsulates（封装） the characteristics of a domain,
+ * which encloses（附上） a set of classes whose instances are granted a set
+ * of permissions（权限） when being executed on behalf of a given set of Principals.
  * <p>
  * A static set of permissions can be bound to a ProtectionDomain when it is
  * constructed; such permissions are granted to the domain regardless of the
@@ -56,8 +56,8 @@ import sun.security.util.SecurityConstants;
  * @author Gary Ellison
  */
 
-public class ProtectionDomain {
-    private static class JavaSecurityAccessImpl implements JavaSecurityAccess {
+public class ProtectionDomain { //todo @csy-005-P2 待了解，与访问权限是否有关系？
+    private static class JavaSecurityAccessImpl implements JavaSecurityAccess { //静态内部类
 
         private JavaSecurityAccessImpl() {
         }

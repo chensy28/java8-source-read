@@ -640,9 +640,9 @@ class Bits {                            // package-private
     // These methods should be called whenever direct memory is allocated or
     // freed.  They allow the user to control the amount of direct memory
     // which a process may access.  All sizes are specified in bytes.
-    static void reserveMemory(long size, int cap) {
+    static void reserveMemory(long size, int cap) { //reserve：保留，todo @csy-005-P2 功能用途是怎样的？
 
-        if (!memoryLimitSet && VM.isBooted()) {
+        if (!memoryLimitSet && VM.isBooted()) { //todo @pause 待了解
             maxMemory = VM.maxDirectMemory();
             memoryLimitSet = true;
         }

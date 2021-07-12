@@ -136,7 +136,7 @@ import sun.misc.SharedSecrets;
  * @since   1.4
  */
 
-public class IdentityHashMap<K,V>
+public class IdentityHashMap<K,V>  //todo @csy-005-P3 该Map的功能用途是啥？
     extends AbstractMap<K,V>
     implements Map<K,V>, java.io.Serializable, Cloneable
 {
