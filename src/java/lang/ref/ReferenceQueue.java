@@ -35,14 +35,14 @@ import java.util.function.Consumer;
  * @since    1.2
  */
 
-public class ReferenceQueue<T> {
+public class ReferenceQueue<T> { //todo @csy-006-P3 引用队列待了解
 
     /**
      * Constructs a new reference-object queue.
      */
     public ReferenceQueue() { }
 
-    private static class Null<S> extends ReferenceQueue<S> {
+    private static class Null<S> extends ReferenceQueue<S> { //todo @csy-006-P3 Null对象是怎么使用的？
         boolean enqueue(Reference<? extends S> r) {
             return false;
         }
@@ -64,7 +64,7 @@ public class ReferenceQueue<T> {
             if ((queue == NULL) || (queue == ENQUEUED)) {
                 return false;
             }
-            assert queue == this;
+            assert queue == this; //todo @csy-006-P3 assert 的功能用途是怎样？
             r.queue = ENQUEUED;
             r.next = (head == null) ? r : head;
             head = r;

@@ -38,7 +38,7 @@ import java.util.Objects;
  * @since 1.8
  */
 @FunctionalInterface
-public interface Function<T, R> {
+public interface Function<T, R> { //todo @csy-006-P2 功能用途是怎样的？
 
     /**
      * Applies this function to the given argument.

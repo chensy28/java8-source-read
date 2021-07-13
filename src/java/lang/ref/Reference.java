@@ -39,7 +39,7 @@ import sun.misc.SharedSecrets;
  * @since    1.2
  */
 
-public abstract class Reference<T> { //引用对象
+public abstract class Reference<T> { //todo @csy-006-P3 引用对象待了解
 
     /* A Reference instance is in one of four possible internal states:
      *

@@ -39,7 +39,7 @@ import java.util.Objects;
  * @since 1.8
  */
 @FunctionalInterface
-public interface Consumer<T> {
+public interface Consumer<T> { //todo @csy-006-P2 此功能的用途是啥？
 
     /**
      * Performs this operation on the given argument.

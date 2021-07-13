@@ -30,7 +30,7 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 /**
- * A container object which may or may not contain a non-null value.
+ * A container object which may or may not contain a non-null value.（可以包含null或非null的对象）
  * If a value is present, {@code isPresent()} will return {@code true} and
  * {@code get()} will return the value.
  *
@@ -92,7 +92,7 @@ public final class Optional<T> {
      * @param value the non-null value to be present
      * @throws NullPointerException if value is null
      */
-    private Optional(T value) {
+    private Optional(T value) { //value不能为null
         this.value = Objects.requireNonNull(value);
     }
 
@@ -104,7 +104,7 @@ public final class Optional<T> {
      * @return an {@code Optional} with the value present
      * @throws NullPointerException if value is null
      */
-    public static <T> Optional<T> of(T value) {
+    public static <T> Optional<T> of(T value) { //静态方法，返回一个非null值对应的Optional对象
         return new Optional<>(value);
     }
 
@@ -117,7 +117,7 @@ public final class Optional<T> {
      * @return an {@code Optional} with a present value if the specified value
      * is non-null, otherwise an empty {@code Optional}
      */
-    public static <T> Optional<T> ofNullable(T value) {
+    public static <T> Optional<T> ofNullable(T value) { //@csy-006-P3 创建
         return value == null ? empty() : of(value);
     }
 
