@@ -31,12 +31,12 @@ import java.lang.annotation.Native;
  * Package-private abstract class for the local filesystem abstraction.
  */
 
-abstract class FileSystem {
+abstract class FileSystem { //todo @csy-007-P2 文件系统待了解
 
     /* -- Normalization and construction -- */
 
     /**
-     * Return the local filesystem's name-separator character.
+     * Return the lLongAdderocal filesystem's name-separator character.
      */
     public abstract char getSeparator();
 

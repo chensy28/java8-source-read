@@ -68,6 +68,18 @@ package java.util;
  * @since 1.2
  */
 
+/**
+ * @csy https://blog.csdn.net/u011240877/article/details/52834074  Java 集合深入理解：AbstractList
+ * AbstractList 继承自 AbstractCollection 抽象类，实现了 List 接口 ，是 ArrayList 和 AbstractSequentiaList 的父类。
+ * 它实现了 List 的一些位置相关操作(比如 get,set,add,remove)，是第一个实现随机访问方法的集合类，但不支持添加和替换
+ *
+ * AbstractList 作为 List 家族的中坚力量
+ *   既实现了 List 的期望
+ *   也继承了 AbstractCollection 的传统
+ *   还创建了内部的迭代器 Itr, ListItr
+ *   还有两个内部子类 SubList 和 RandomAccessSublist
+ *
+ */
 public abstract class AbstractList<E> extends AbstractCollection<E> implements List<E> {
     /**
      * Sole constructor.  (For invocation by subclass constructors, typically

@@ -142,7 +142,7 @@ import java.util.stream.StreamSupport;
  * @since 1.2
  */
 
-public interface Collection<E> extends Iterable<E> {
+public interface Collection<E> extends Iterable<E> { //集合允许重复的元素
     // Query Operations
 
     /**

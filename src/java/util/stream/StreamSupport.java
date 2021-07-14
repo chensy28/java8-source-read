@@ -37,7 +37,7 @@ import java.util.function.Supplier;
  *
  * @since 1.8
  */
-public final class StreamSupport { //todo @csy-001 功能用途是什么？
+public final class StreamSupport { //@csy-001 功能用途是什么？解：用于创建和操纵流的低级实用程序方法。
 
     // Suppresses default constructor, ensuring non-instantiability.
     private StreamSupport() {}
@@ -64,7 +64,7 @@ public final class StreamSupport { //todo @csy-001 功能用途是什么？
      *        stream.
      * @return a new sequential or parallel {@code Stream}
      */
-    public static <T> Stream<T> stream(Spliterator<T> spliterator, boolean parallel) {
+    public static <T> Stream<T> stream(Spliterator<T> spliterator, boolean parallel) { //todo @csy-007-pause
         Objects.requireNonNull(spliterator);
         return new ReferencePipeline.Head<>(spliterator,
                                             StreamOpFlag.fromCharacteristics(spliterator),

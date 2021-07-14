@@ -19,19 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e8da77b-983a-4258-bda4-355d26b1be77" name="Default" comment="buffer阅读">
+    <list default="true" id="5e8da77b-983a-4258-bda4-355d26b1be77" name="Default" comment="访问控制阅读">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/io/ObjectOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/io/ObjectOutputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/lang/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lang/Class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/nio/Bits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/nio/Bits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/nio/ByteBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/nio/ByteBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/nio/DirectByteBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/nio/DirectByteBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/security/AccessControlContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/security/AccessControlContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/security/AccessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/security/AccessController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/security/CodeSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/security/CodeSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/security/PrivilegedAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/security/PrivilegedAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/security/ProtectionDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/security/ProtectionDomain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/util/IdentityHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/IdentityHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/io/FileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/io/FileSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/AbstractList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/AbstractList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/Collection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/Collections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/Collections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/concurrent/atomic/LongAdder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/concurrent/atomic/LongAdder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/util/stream/StreamSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/util/stream/StreamSupport.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,19 +161,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -265,7 +247,12 @@
       <workItem from="1623235760577" duration="3694000" />
       <workItem from="1625815304690" duration="2416000" />
       <workItem from="1625821509724" duration="2469000" />
-      <workItem from="1626065216305" duration="6420000" />
+      <workItem from="1626065216305" duration="7302000" />
+      <workItem from="1626105281957" duration="1541000" />
+      <workItem from="1626158279619" duration="51000" />
+      <workItem from="1626187142633" duration="2061000" />
+      <workItem from="1626218696788" duration="645000" />
+      <workItem from="1626227374660" duration="6161000" />
     </task>
     <task id="LOCAL-00001" summary="源码初次提交">
       <created>1538061213501</created>
@@ -456,7 +443,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625823633805</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="访问控制阅读">
+      <created>1626102480892</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1626102480893</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Option、Reference阅读">
+      <created>1626189091531</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1626189091531</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -503,7 +504,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="源码提交" />
     <MESSAGE value="源码初次提交" />
     <MESSAGE value="java8源码初次提交" />
     <MESSAGE value="AtomicBoolean阅读" />
@@ -527,7 +527,9 @@
     <MESSAGE value="问题点纪要" />
     <MESSAGE value="补6.8问题点纪要" />
     <MESSAGE value="buffer阅读" />
-    <option name="LAST_COMMIT_MESSAGE" value="buffer阅读" />
+    <MESSAGE value="访问控制阅读" />
+    <MESSAGE value="Option、Reference阅读" />
+    <option name="LAST_COMMIT_MESSAGE" value="Option、Reference阅读" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -551,6 +553,11 @@
           <url>file://$PROJECT_DIR$/src/java/nio/ByteBuffer.java</url>
           <line>310</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java/util/Collections.java</url>
+          <line>4432</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

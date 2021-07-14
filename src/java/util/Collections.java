@@ -1429,7 +1429,7 @@ public class Collections {
      * @param  m the map for which an unmodifiable view is to be returned.
      * @return an unmodifiable view of the specified map.
      */
-    public static <K,V> Map<K,V> unmodifiableMap(Map<? extends K, ? extends V> m) {
+    public static <K,V> Map<K,V> unmodifiableMap(Map<? extends K, ? extends V> m) { //todo @csy-007-P3 待了解
         return new UnmodifiableMap<>(m);
     }
 
@@ -4424,7 +4424,7 @@ public class Collections {
     /**
      * @serial include
      */
-    private static class EmptyList<E>
+    private static class EmptyList<E> //静态内部类，空列表
         extends AbstractList<E>
         implements RandomAccess, Serializable {
         private static final long serialVersionUID = 8842843931221139166L;
