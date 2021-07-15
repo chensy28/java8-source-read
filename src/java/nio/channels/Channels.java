@@ -45,12 +45,12 @@ import sun.nio.cs.StreamEncoder;
 
 
 /**
- * Utility methods for channels and streams.
+ * Utility（通用的） methods for channels and streams.（通道和流的实用方法。）
  *
  * <p> This class defines static methods that support the interoperation of the
  * stream classes of the <tt>{@link java.io}</tt> package with the channel
  * classes of this package.  </p>
- *
+ *（该类定义了支持java.io包的流类与此包的通道类的互操作的静态方法。）
  *
  * @author Mark Reinhold
  * @author Mike McCloskey
@@ -142,7 +142,7 @@ public final class Channels {
     public static OutputStream newOutputStream(final WritableByteChannel ch) {
         checkNotNull(ch, "ch");
 
-        return new OutputStream() {
+        return new OutputStream() { //匿名内部类
 
                 private ByteBuffer bb = null;
                 private byte[] bs = null;       // Invoker's previous array

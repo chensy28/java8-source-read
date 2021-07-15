@@ -56,7 +56,7 @@ import java.util.stream.StreamSupport;
  * @spec JSR-51
  */
 
-public interface CharSequence {
+public interface CharSequence { //todo @csy-009-P3 此接口的功能用途是什么？
 
     /**
      * Returns the length of this character sequence.  The length is the number

@@ -487,7 +487,7 @@ public final class Short extends Number implements Comparable<Short> {
      *     the bytes in the specified {@code short} value.
      * @since 1.5
      */
-    public static short reverseBytes(short i) {
+    public static short reverseBytes(short i) { //reverse: 翻转
         return (short) (((i & 0xFF00) >> 8) | (i << 8));
     }
 

@@ -219,7 +219,7 @@ public final class ServiceLoader<S> //todo @csy-001 功能用途是什么？
         lookupIterator = new LazyIterator(service, loader);
     }
 
-    private ServiceLoader(Class<S> svc, ClassLoader cl) {
+    private ServiceLoader(Class<S> svc, ClassLoader cl) { //todo @pause
         service = Objects.requireNonNull(svc, "Service interface cannot be null");
         loader = (cl == null) ? ClassLoader.getSystemClassLoader() : cl;
         acc = (System.getSecurityManager() != null) ? AccessController.getContext() : null;
@@ -257,7 +257,7 @@ public final class ServiceLoader<S> //todo @csy-001 功能用途是什么？
             return -1;
         }
         int ci = ln.indexOf('#');
-        if (ci >= 0) ln = ln.substring(0, ci);
+        if (ci >= 0) ln = ln.substring(0, ci); //解析行中的内容
         ln = ln.trim();
         int n = ln.length();
         if (n != 0) {

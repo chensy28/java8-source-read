@@ -30,7 +30,7 @@ package java.nio;
 
 class ByteBufferAsCharBufferL                  // package-private
     extends CharBuffer
-{
+{ //todo @csy-009-P3 与ByteBufferAsCharBufferB的差异是什么？当前的功能用途是怎样的？
 
 
 

@@ -48,7 +48,7 @@ import java.io.IOException;
  *
  * @since 1.5
  */
-public interface Appendable {
+public interface Appendable {  //todo @csy-009-P3 此接口的用途是啥，CharBuffer实现该接口的用途是啥？
 
     /**
      * Appends the specified character sequence to this <tt>Appendable</tt>.

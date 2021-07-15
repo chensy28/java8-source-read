@@ -30,7 +30,7 @@ package java.nio;
 
 class StringCharBuffer                                  // package-private
     extends CharBuffer
-{
+{ // StringCharBuffer继承CharBuffer，CharBuffer继承Buffer
     CharSequence str;
 
     StringCharBuffer(CharSequence s, int start, int end) { // package-private
@@ -60,7 +60,7 @@ class StringCharBuffer                                  // package-private
         str = s;
     }
 
-    public CharBuffer duplicate() {
+    public CharBuffer duplicate() { //todo @csy-009-P3 此处是怎么做复制的？
         return new StringCharBuffer(str, markValue(),
                                     position(), limit(), capacity(), offset);
     }

@@ -336,7 +336,7 @@ public abstract class CharBuffer
     }
 
     /**
-     * Wraps a char array into a buffer.
+     * Wraps a char array into a buffer.（封装字符数组到buffer中）
      *
      * <p> The new buffer will be backed by the given char array;
      * that is, modifications to the buffer will cause the array to be modified

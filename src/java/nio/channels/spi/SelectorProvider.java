@@ -38,6 +38,7 @@ import sun.security.action.GetPropertyAction;
 
 /**
  * Service-provider class for selectors and selectable channels.
+ * （选择器和可选择通道的服务提供者类）
  *
  * <p> A selector provider is a concrete subclass of this class that has a
  * zero-argument constructor and implements the abstract methods specified
@@ -66,7 +67,7 @@ import sun.security.action.GetPropertyAction;
  * @since 1.4
  */
 
-public abstract class SelectorProvider {
+public abstract class SelectorProvider { //todo @csy-009-P3 该类的功能用途是怎样的？
 
     private static final Object lock = new Object();
     private static SelectorProvider provider = null;

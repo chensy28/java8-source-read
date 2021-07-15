@@ -30,7 +30,7 @@ import java.io.Closeable;
 
 
 /**
- * A nexus for I/O operations.
+ * A nexus（连结） for I/O operations.
  *
  * <p> A channel represents an open connection to an entity such as a hardware
  * device, a file, a network socket, or a program component that is capable of

@@ -97,7 +97,7 @@ import java.util.concurrent.Future;  // javadoc
 
 public interface AsynchronousChannel
     extends Channel
-{
+{ //todo @csy-009-P3 怎么做到异步化的？
     /**
      * Closes this channel.
      *

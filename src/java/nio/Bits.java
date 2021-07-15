@@ -208,7 +208,7 @@ class Bits {                            // package-private
 
     // -- get/put int --
 
-    static private int makeInt(byte b3, byte b2, byte b1, byte b0) {
+    static private int makeInt(byte b3, byte b2, byte b1, byte b0) { //todo @csy-009-P3 此处的运算的用途是啥？
         return (((b3       ) << 24) |
                 ((b2 & 0xff) << 16) |
                 ((b1 & 0xff) <<  8) |
@@ -366,7 +366,7 @@ class Bits {                            // package-private
         return bigEndian ? getLongB(a) : getLongL(a);
     }
 
-    private static byte long7(long x) { return (byte)(x >> 56); }
+    private static byte long7(long x) { return (byte)(x >> 56); } //todo @csy-009-P3 为啥要做移位运算
     private static byte long6(long x) { return (byte)(x >> 48); }
     private static byte long5(long x) { return (byte)(x >> 40); }
     private static byte long4(long x) { return (byte)(x >> 32); }
@@ -550,7 +550,7 @@ class Bits {                            // package-private
 
     // -- Unsafe access --
 
-    private static final Unsafe unsafe = Unsafe.getUnsafe();
+    private static final Unsafe unsafe = Unsafe.getUnsafe();  //todo @csy-009-P3 为啥叫做不安全类，待了解？
 
     private static byte _get(long a) {
         return unsafe.getByte(a);
@@ -642,7 +642,7 @@ class Bits {                            // package-private
     // which a process may access.  All sizes are specified in bytes.
     static void reserveMemory(long size, int cap) { //reserve：保留，todo @csy-005-P2 功能用途是怎样的？
 
-        if (!memoryLimitSet && VM.isBooted()) { //todo @pause 待了解
+        if (!memoryLimitSet && VM.isBooted()) {
             maxMemory = VM.maxDirectMemory();
             memoryLimitSet = true;
         }
